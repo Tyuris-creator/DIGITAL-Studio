@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url(../font/Roboto/Roboto-VariableFont_wdth\,wght.ttf) format(truetype);
+}
+
+header {
+    background-image: url(../image/fonstola\ 1.svg);
+    font-family: 'Roboto';
+    color: hsla(0, 0%, 100%, 1);
+}
+
+.flexBoxHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+
+.elementsExceptAboutStudio{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    padding: 25px 0;
+    align-self: flex-end;
+}
+
+.aboutStudio{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    padding: 20px 0 21px 0;
+}
+
+.imagePosition {
+    width: 103.7241439819336;
+    height: 32;
+    margin: 16px 116.28px 16px 360px;
+}
+
+.telNumberPosition{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-decoration: none;
+    color: hsla(0, 0%, 100%, 1);
+    margin: 25px 359px 25px 127px;
+}
