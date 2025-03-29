@@ -79,3 +79,29 @@ header {
         margin-left: 32px;
     }
 }
+
+@media (max-width: 384px) {
+    .aboutStudio,.elementsExceptAboutStudio, .telNumberPosition{
+        display: none;
+    }
+    .flexBoxHeader{
+        display: flex;
+        justify-content: space-between;
+    }
+    .NavigationImageForSmallerScreen{
+        visibility: visible;
+        width: 48px;
+        height: 48px;
+        margin-top: 16px;
+        margin-left: 320px;
+        border-radius: 4px;
+        border-width: 1px;
+    }
+    .imagePosition{
+        width: 103.7241439819336px;
+        height: 32px;
+        margin-top: 24px;
+        margin-left: 18px;
+        margin-bottom: 24px;
+    }
+}
