@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url(../font/Roboto/Roboto-VariableFont_wdth\,wght.ttf) format(truetype);
+}
+
+.main-bg {
+    background-image: url(../image/fonstola\ 1.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
