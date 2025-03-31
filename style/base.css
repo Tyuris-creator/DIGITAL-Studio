@@ -7,4 +7,6 @@
     background-image: url(../images/backgroundImage.svg);
     background-repeat: no-repeat;
     background-size: cover;
+    color: hsla(0, 0%, 100%, 1);
+    font-family: Roboto;
 }

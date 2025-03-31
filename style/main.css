@@ -1,0 +1,50 @@
+.firstPartOfPage{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;   
+}
+
+.mainfFlow{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.mainPage{
+    display: flex;
+    align-items: center;
+ 
+}
+
+.line1{
+    font-weight: 300;
+    font-size: 28px;
+    letter-spacing: 20px;
+}
+
+.line2{
+    font-weight: 400;
+    font-size: 104px;
+    letter-spacing: 25px;
+}
+
+.flexboxContainerInsideSectionFirst{
+    display: flex;
+    flex-direction: column;
+}
+
+.lastDate {
+    align-self: flex-end;
+    padding-bottom: 32px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.lastPhrase{
+    width: 199px;
+    padding-bottom: 68px;
+    font-weight: 500;
+    font-size: 30px;
+}
