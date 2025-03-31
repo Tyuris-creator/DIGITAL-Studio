@@ -1,50 +1,45 @@
-.firstPartOfPage{
+/* Обёртка главный флексбокс */
+.austronaut {  
     max-width: 1200px;
     margin: 0 auto;
-    display: flex;
-    flex-direction: column;   
-}
-
-.mainfFlow{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    
-}
-
-.mainPage{
-    display: flex;
-    align-items: center;
- 
-}
-
-.line1{
-    font-weight: 300;
-    font-size: 28px;
-    letter-spacing: 20px;
-}
-
-.line2{
-    font-weight: 400;
-    font-size: 104px;
-    letter-spacing: 25px;
-}
-
-.flexboxContainerInsideSectionFirst{
     display: flex;
     flex-direction: column;
 }
 
-.lastDate {
+/* Контейнер с астронафтом + а также логотип фирмы */
+.flexboxContainer1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Логотип фирмы ОРИОН обернутый в саб контейнер чтобы сделать столбец */
+.subContainerForFlexboxContainer1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Используйте эффективные технологии svg надпись */
+section > img {
+    width: 199px;
+    height: 105px;
+}
+
+/* DATE 2024 + COPYRIGHT СИМВОЛ */
+.date {
     align-self: flex-end;
+    padding-top: 68px;
     padding-bottom: 32px;
     font-weight: 600;
     font-size: 20px;
 }
+/* ЗАДАЛ РАЗМЕРЫ ДЛЯ КОНТЕЙНЕРОВ STUDIO ORION Я ПЫТАЛСЯ СДЕЛАТЬ НАДПИСЬ В ТЕГЕ <p> но так выглядело лучше насколько правильно ? тоже svg надписи */
 
-.lastPhrase{
-    width: 199px;
-    padding-bottom: 68px;
-    font-weight: 500;
-    font-size: 30px;
+.studio {
+    width: 290px;
+    height: 33px;
+}
+.orion {
+    width: 317;
+    height: 101; 
 }
