@@ -7,39 +7,40 @@
 }
 
 /* Контейнер с астронафтом + а также логотип фирмы */
-.flexboxContainer1 {
+.flexbox-container {
     display: flex;
     justify-content: space-between;
 }
 
 /* Логотип фирмы ОРИОН обернутый в саб контейнер чтобы сделать столбец */
-.subContainerForFlexboxContainer1{
+.sub-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
+/* ЗАДАЛ РАЗМЕРЫ ДЛЯ КОНТЕЙНЕРОВ STUDIO ORION Я ПЫТАЛСЯ СДЕЛАТЬ НАДПИСЬ В ТЕГЕ <p> но так выглядело лучше насколько правильно ? тоже svg надписи */
+
+.sub-container__studio-sign {
+    width: 290px;
+    height: 33px;
+}
+.sub-container__orion-sign {
+    width: 317;
+    height: 101; 
+}
+
 /* Используйте эффективные технологии svg надпись */
-section > img {
+.austronaut__effective-tools-sign {
     width: 199px;
     height: 105px;
 }
 
 /* DATE 2024 + COPYRIGHT СИМВОЛ */
-.date {
+.austronaut__date {
     align-self: flex-end;
     padding-top: 68px;
     padding-bottom: 32px;
     font-weight: 600;
     font-size: 20px;
-}
-/* ЗАДАЛ РАЗМЕРЫ ДЛЯ КОНТЕЙНЕРОВ STUDIO ORION Я ПЫТАЛСЯ СДЕЛАТЬ НАДПИСЬ В ТЕГЕ <p> но так выглядело лучше насколько правильно ? тоже svg надписи */
-
-.studio {
-    width: 290px;
-    height: 33px;
-}
-.orion {
-    width: 317;
-    height: 101; 
 }
