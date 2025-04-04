@@ -1,8 +1,3 @@
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
 .header {
     background: #13131580;
     padding: 12px;
@@ -13,10 +8,17 @@
     font-weight: 600;
 }
 
-.wrapper {
+.container-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.container-wrapper__image-logo {
+    width: 103.7241439819336px;
+    height: 32px;
 }
 
 .navigation {
@@ -24,18 +26,15 @@
     gap: 12px;
     cursor: pointer;
 }
-.telNumber{
+
+.navigation__elements:hover{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.container-wrapper_tel-number{
     color: hsla(0, 0%, 100%, 1);
     font-family: "Roboto";
     font-weight: 500;
 }
 
-.images{
-    width: 103.7241439819336px;
-    height: 32px;
-}
-
-.elements:hover{
-    font-weight: 600;
-    font-size: 20px;
-}
