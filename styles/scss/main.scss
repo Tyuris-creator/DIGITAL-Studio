@@ -11,18 +11,41 @@
             align-items: center;
             &__line {
                 width: 317px;
-                border-top: 2px solid vars.$line-color;
+                border-top: 1px solid vars.$line-color;
+            }
+            &__austronaut {
+                padding-top: 80px;
+                padding-bottom: 150.48px;
+                width: 626.39501953125px;
+                height: 625.5238647460938px;
+            }
+            &__company-name {
+                font-weight: 300;
+                font-size: 28px;
+                .wrapper-one_logo-sign_big {
+                    font-weight: 400;
+                    font-size: 104px;
+                }
             }
         }
         .wrapper-two{
             display: flex;
             flex-direction: column;
-            &__date {
+            position: relative;
+            &__date {  
                 text-align: end;
+                font-weight: 600;
+                font-size: 20px;
+                padding: 68px 0 32px 0;  
             }
             &__sign {
                 width: fit-content;
+                font-weight: 500;
+                font-size: 30px;
+                line-height: 100%;
             }
         }
     }
 }
+
+

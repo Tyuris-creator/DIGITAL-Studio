@@ -1,4 +1,6 @@
-// Задал базовые настройки страницы а именно сам page,page-content
+// Задал базовые настройки страницы а именно сам page,page-content, fonts
+@use './variables' as vars;
+@use './fonts.scss';
 
 .page {
     display: flex;
@@ -6,6 +8,9 @@
     background-image: url('/assets/imgs/BGmain.png');
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: 'Roboto';
+    color: vars.$font-color;
+
     
     &-content{
         display: flex;

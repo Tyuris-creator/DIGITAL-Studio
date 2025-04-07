@@ -4,9 +4,26 @@
     box-sizing: content-box;
 }
 
+
 .header-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: vars.$bg-header;
+    padding: 16px 0;
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 12px;
+        font-weight: 500;
+        font-size: 12px;
+        &__element {
+            color: vars.$font-color;
+        }
+    }
+    &__number{
+        color: vars.$font-color;
+        font-weight: 500;
+        font-size: 12px;
+    }
 }

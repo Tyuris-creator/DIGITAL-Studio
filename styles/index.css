@@ -89,12 +89,18 @@ input[type=file] {
   max-width: 100%;
 }
 
+@font-face {
+  font-family: "Roboto";
+  src: url("/assets/fonts/Roboto-VariableFont_wdth,wght.ttf");
+}
 .page {
   display: flex;
   flex-direction: column;
   background-image: url("/assets/imgs/BGmain.png");
   background-repeat: no-repeat;
   background-size: cover;
+  font-family: "Roboto";
+  color: hsl(0, 0%, 100%);
 }
 .page-content {
   display: flex;
@@ -113,6 +119,22 @@ input[type=file] {
   justify-content: space-between;
   align-items: center;
   background-color: hsla(236, 5%, 8%, 0.5);
+  padding: 16px 0;
+}
+.header-content .nav {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 12px;
+  font-weight: 500;
+  font-size: 12px;
+}
+.header-content .nav__element {
+  color: hsl(0, 0%, 100%);
+}
+.header-content__number {
+  color: hsl(0, 0%, 100%);
+  font-weight: 500;
+  font-size: 12px;
 }
 
 .main-content {
@@ -129,17 +151,38 @@ input[type=file] {
 }
 .main-content .section-first .wrapper-one__line {
   width: 317px;
-  border-top: 2px solid hsl(0, 0%, 100%);
+  border-top: 1px solid hsl(0, 0%, 100%);
+}
+.main-content .section-first .wrapper-one__austronaut {
+  padding-top: 80px;
+  padding-bottom: 150.48px;
+  width: 626.3950195313px;
+  height: 625.5238647461px;
+}
+.main-content .section-first .wrapper-one__company-name {
+  font-weight: 300;
+  font-size: 28px;
+}
+.main-content .section-first .wrapper-one__company-name .wrapper-one_logo-sign_big {
+  font-weight: 400;
+  font-size: 104px;
 }
 .main-content .section-first .wrapper-two {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 .main-content .section-first .wrapper-two__date {
   text-align: end;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 68px 0 32px 0;
 }
 .main-content .section-first .wrapper-two__sign {
   width: fit-content;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 100%;
 }
 
 /*# sourceMappingURL=index.css.map */
