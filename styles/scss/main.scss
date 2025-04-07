@@ -14,5 +14,15 @@
                 border-top: 2px solid vars.$line-color;
             }
         }
+        .wrapper-two{
+            display: flex;
+            flex-direction: column;
+            &__date {
+                text-align: end;
+            }
+            &__sign {
+                width: fit-content;
+            }
+        }
     }
 }

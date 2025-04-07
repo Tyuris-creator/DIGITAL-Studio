@@ -131,5 +131,15 @@ input[type=file] {
   width: 317px;
   border-top: 2px solid hsl(0, 0%, 100%);
 }
+.main-content .section-first .wrapper-two {
+  display: flex;
+  flex-direction: column;
+}
+.main-content .section-first .wrapper-two__date {
+  text-align: end;
+}
+.main-content .section-first .wrapper-two__sign {
+  width: fit-content;
+}
 
 /*# sourceMappingURL=index.css.map */
