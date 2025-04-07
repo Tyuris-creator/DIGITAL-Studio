@@ -170,7 +170,11 @@ input[type=file] {
 .main-content .section-first .wrapper-two {
   display: flex;
   flex-direction: column;
-  position: relative;
+  height: 100%;
+  width: 100%;
+  max-width: 1200px;
+  padding-top: 628px;
+  position: absolute;
 }
 .main-content .section-first .wrapper-two__date {
   text-align: end;
