@@ -1,0 +1,18 @@
+// Задал базовые настройки страницы а именно сам page,page-content
+
+.page {
+    display: flex;
+    flex-direction: column;
+    background-image: url('/assets/imgs/BGmain.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    &-content{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
+

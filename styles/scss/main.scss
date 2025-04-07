@@ -1,0 +1,16 @@
+@use './variables' as vars;
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .section-first {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .section-first__line{
+            width: 317px;
+            border-top: 1px solid vars.$line-color;
+        }
+    }
+}
