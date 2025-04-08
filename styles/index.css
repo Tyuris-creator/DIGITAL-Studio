@@ -169,6 +169,8 @@ body {
 .main-content .section-first .wrapper-one__austronaut {
   padding-top: 80px;
   padding-bottom: 150.48px;
+  position: relative;
+  left: 34.58px;
 }
 .main-content .section-first .wrapper-one__company-name {
   font-weight: 300;
