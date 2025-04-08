@@ -10,7 +10,10 @@
             display: flex;
             align-items: center;
             &__line {
+                position: relative;
+                top: calc(vars.$base-size * 82.5);
                 width: calc(vars.$base-size * 79.25);
+                height: calc(vars.$base-size * 214);
                 border-top: 1px solid vars.$line-color;
             }
             &__austronaut {
@@ -22,6 +25,14 @@
                 font-size: 7rem;
                 padding-bottom: calc(vars.$base-size * 2.95);
                 letter-spacing: calc(vars.$base-size * 1.4);
+                width: calc(vars.$base-size * 79);
+                height: calc(vars.$base-size * 214);
+                text-align: end;
+                text-shadow: 2px 2px 2px black;
+                position: relative;
+                top: calc(vars.$base-size * 78.25);
+                
+                
                 .wrapper-one_logo-sign_big {
                     font-weight: 400;
                     font-size: 26rem;
