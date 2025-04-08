@@ -4,9 +4,16 @@
 @use './fonts.scss';
 
 * {
-    @include mixin.reset-list()
+    @include mixin.reset-list;
 }
 
+html {
+    font-size: vars.$font-size;
+}
+
+body {
+    font-size: 4rem;
+}
 
 .page {
     display: flex;
@@ -17,13 +24,11 @@
     font-family: 'Roboto';
     color: vars.$font-color;
 
-
-    
     &-content{
         display: flex;
         flex-direction: column;
         width: 100%;
-        max-width: 1200px;
+        max-width: vars.$page-content;
         margin: 0 auto;
     }
 }

@@ -8,7 +8,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 16px 0;
+    padding: calc(vars.$base-size * 4) 0;
     z-index: 0;
     &::before{
         content: "";
@@ -16,9 +16,9 @@
         background-color: vars.$bg-header;
         left: 0;
         width: 100%;
-        max-width: 1920px;
+        max-width: calc(vars.$base-size * 640);
         height: 100%;
-        max-height: 68px;
+        max-height: calc(vars.$base-size * 17);
         z-index: -1;
     };
     &::before{
@@ -27,18 +27,18 @@
         background-color: vars.$bg-header;
         right: 0;
         width: 100%;
-        max-width: 2560px;
+        max-width: calc(vars.$base-size * 640);
         height: 100%;
-        max-height: 68px;
+        max-height: calc(vars.$base-size * 17);
         z-index: -1;
     };
 
     .nav {
         display: flex;
         justify-content: space-between;
-        column-gap: 12px;
+        column-gap: calc(vars.$base-size * 4);
         font-weight: 500;
-        font-size: 12px;
+        font-size: calc(vars.$base-size * 3);
         &__element {
             color: vars.$font-color;
         }
@@ -46,6 +46,6 @@
     &__number{
         color: vars.$font-color;
         font-weight: 500;
-        font-size: 12px;
+        font-size: calc(vars.$base-size * 3);
     }
 }
