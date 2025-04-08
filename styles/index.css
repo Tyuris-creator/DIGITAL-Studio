@@ -144,7 +144,7 @@ body {
 .header-content__number {
   color: hsl(0, 0%, 100%);
   font-weight: 500;
-  font-size: 12px;
+  font-size: 3rem;
 }
 
 .main-content {
@@ -166,16 +166,17 @@ body {
 .main-content .section-first .wrapper-one__austronaut {
   padding-top: 80px;
   padding-bottom: 150.48px;
-  width: 626.3950195313px;
-  height: 625.5238647461px;
 }
 .main-content .section-first .wrapper-one__company-name {
   font-weight: 300;
-  font-size: 28px;
+  font-size: 7rem;
+  padding-bottom: 11.8px;
+  letter-spacing: 5.6px;
 }
 .main-content .section-first .wrapper-one__company-name .wrapper-one_logo-sign_big {
   font-weight: 400;
-  font-size: 104px;
+  font-size: 26rem;
+  letter-spacing: 26px;
 }
 .main-content .section-first .wrapper-two {
   display: flex;
@@ -189,13 +190,13 @@ body {
 .main-content .section-first .wrapper-two__date {
   text-align: end;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 5rem;
   padding: 68px 0 32px 0;
 }
 .main-content .section-first .wrapper-two__sign {
   width: fit-content;
   font-weight: 500;
-  font-size: 30px;
+  font-size: 7.5rem;
   line-height: 100%;
 }
 

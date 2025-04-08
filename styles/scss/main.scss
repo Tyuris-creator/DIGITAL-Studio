@@ -10,21 +10,22 @@
             display: flex;
             align-items: center;
             &__line {
-                width: 317px;
+                width: calc(vars.$base-size * 79.25);
                 border-top: 1px solid vars.$line-color;
             }
             &__austronaut {
-                padding-top: 80px;
-                padding-bottom: 150.48px;
-                width: 626.39501953125px;
-                height: 625.5238647460938px;
+                padding-top: calc(vars.$base-size * 20);
+                padding-bottom: calc(vars.$base-size * 37.62);
             }
             &__company-name {
                 font-weight: 300;
-                font-size: 28px;
+                font-size: 7rem;
+                padding-bottom: calc(vars.$base-size * 2.95);
+                letter-spacing: calc(vars.$base-size * 1.4);
                 .wrapper-one_logo-sign_big {
                     font-weight: 400;
-                    font-size: 104px;
+                    font-size: 26rem;
+                    letter-spacing: calc(vars.$base-size * 6.5);
                 }
             }
         }
@@ -33,19 +34,19 @@
             flex-direction: column;
             height: 100%;
             width: 100%;
-            max-width: 1200px;
-            padding-top: 628px;
+            max-width: calc(vars.$base-size * 300);
+            padding-top: calc(vars.$base-size * 157);
             position: absolute;
             &__date {  
                 text-align: end;
                 font-weight: 600;
-                font-size: 20px;
-                padding: 68px 0 32px 0;  
+                font-size: 5rem;
+                padding: calc(vars.$base-size * 17) 0 calc(vars.$base-size * 8) 0;  
             }
             &__sign {
                 width: fit-content;
                 font-weight: 500;
-                font-size: 30px;
+                font-size: 7.5rem;
                 line-height: 100%;
             }
         }
