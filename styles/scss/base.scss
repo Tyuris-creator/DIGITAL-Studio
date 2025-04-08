@@ -1,6 +1,12 @@
 // Задал базовые настройки страницы а именно сам page,page-content, fonts
 @use './variables' as vars;
+@use './mixin' as mixin;
 @use './fonts.scss';
+
+* {
+    @include mixin.reset-list()
+}
+
 
 .page {
     display: flex;
