@@ -143,6 +143,7 @@ body {
 .main-content .section-first {
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
 }
 .main-content .section-first .wrapper-one {
   display: flex;
@@ -201,22 +202,24 @@ body {
 }
 
 .section-two {
-  display: flex;
   background-color: hsla(0, 10%, 65%, 0.25);
   backdrop-filter: blur(20px);
   z-index: 1;
 }
-.section-two .spacecraft {
-  position: absolute;
-  z-index: -1;
-  filter: blur(8px);
-  align-self: flex-end;
-}
 .section-two .content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
   width: 100vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.section-two .content .spacecraft {
+  position: absolute;
+  z-index: -1;
+  filter: blur(8px);
+  align-self: flex-end;
 }
 .section-two .content .content__log {
   align-self: flex-start;
