@@ -20,7 +20,7 @@
                 padding-top: calc(vars.$base-size * 20);
                 padding-bottom: calc(vars.$base-size * 37.62);
                 position: relative;
-                left: calc(vars.$base-size * 8.645);;
+                left: calc(vars.$base-size * 8.645);
             }
             &__company-name {
                 font-weight: 300;
@@ -64,7 +64,80 @@
                 line-height: 100%;
             }
         }
-    }
+    }  
 }
 
+.section-two {
+    display: flex;
+    background-color: hsla(0, 10%, 65%, 0.25);
+    backdrop-filter: blur(20px);
+    z-index: 1;
+    .spacecraft {
+        position: absolute;
+        z-index: -1;
+        filter: blur(8px);
+        align-self: flex-end;
+    }
+    .content {
+        width: 100vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .content__log {
+            align-self: flex-start;
+            padding-top: 111px;
+        }
+        .content__decor-line{
+            width: 223px;
+            border-top: 1px solid white;
+            align-self: flex-start;
+            margin-top: 156px;
+        }
+        .info-block {
+            padding-top: 128px;
+            width: 594px;
+            display: flex;
+            flex-direction: column;
+            .content__info1{
+                font-weight: 300;
+                font-size: 48px;
+                line-height: 100%;
+                letter-spacing: calc(vars.$base-size * 1.4);
+                padding-bottom: 32px;
+            }
+            .content__info2{
+                font-weight: 500;
+                font-size: 30px;
+                line-height: 100%;
+                letter-spacing: 0%;
+                padding-bottom: 32px;
+            }
+            .content__info3{
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 100%;
+                letter-spacing: 0%;
+                padding-bottom: 32px;
 
+            }
+            .content__info4{
+                font-family: Roboto;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 100%;
+                letter-spacing: 0%;
+                padding-bottom: 32px;
+            }
+            .content__info5{
+                font-family: Roboto;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 100%;
+                letter-spacing: 0%;
+                text-align: end;
+                padding-bottom: 32px;
+                padding-top: 36px;
+            }
+        }
+    }
+}
