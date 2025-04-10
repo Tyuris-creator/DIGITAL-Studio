@@ -131,7 +131,7 @@ body {
   flex-direction: column;
   row-gap: 11.91px;
 }
-.main .section-wrapper .preview .company-info__type {
+.main .section-wrapper .preview .company-info .company-type {
   font-size: 7rem;
   font-weight: 300;
   letter-spacing: 5.6px;
@@ -159,9 +159,30 @@ body {
 }
 .main .bg-color {
   background-color: hsla(0, 10%, 65%, 0.25);
+  backdrop-filter: blur(20px);
 }
-.main .bg-color .section-wrapper {
-  background-color: red;
+.main .bg-color .section-wrapper .upper-block {
+  margin-top: 111px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.main .bg-color .section-wrapper .upper-block .logo-resize {
+  width: 291px;
+  height: 90px;
+}
+.main .bg-color .section-wrapper .upper-block .line {
+  background-color: hsl(0, 0%, 100%);
+  width: 223px;
+  height: 1px;
+}
+.main .bg-color .section-wrapper .upper-block .studio {
+  font-weight: 300;
+  font-size: 12rem;
+  letter-spacing: 9, 6px;
+}
+.main .bg-color .bottom-block {
+  display: flex;
 }
 
 /*# sourceMappingURL=index.css.map */
