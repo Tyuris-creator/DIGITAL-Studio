@@ -1,0 +1,26 @@
+@use 'variables' as vars;
+
+.header{
+   background-color: hsla(236, 5%, 8%, 0.5);
+    .header-wrapper{
+        height: 64px;
+        width: 100%;
+        max-width: vars.$content-width;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+        .nav {
+            display: flex;
+            column-gap: 12px;
+            font-size: 3rem;
+        }
+        .tel-number{
+            font-family: 'Roboto';
+            font-size: 3rem;
+            color: vars.$font-color;
+        }
+    }
+}
+
+
