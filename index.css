@@ -72,7 +72,7 @@ body {
 }
 
 .main-bg {
-  background-image: url("../assets/imgs/background.png");
+  background-image: url("../assets/imgs/background_height_2398px.png");
 }
 
 .header {
@@ -97,6 +97,59 @@ body {
   font-family: "Roboto";
   font-size: 3rem;
   color: hsl(0, 0%, 100%);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 80px;
+  margin-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+}
+.main-wrapper .preview {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.main-wrapper .preview .decor-line {
+  width: 317px;
+  height: 1px;
+  background-color: hsl(0, 0%, 100%);
+}
+.main-wrapper .preview .austronaut {
+  margin-right: -32px;
+}
+.main-wrapper .preview .company-info {
+  text-shadow: 0px 4px 4px hsla(0, 0%, 0%, 0.25);
+  display: flex;
+  flex-direction: column;
+}
+.main-wrapper .preview .company-info .company-type {
+  font-size: 7rem;
+  font-weight: 300;
+  letter-spacing: 5.6px;
+  align-self: center;
+}
+.main-wrapper .preview .company-info .company-name {
+  font-size: 26rem;
+  font-weight: 400;
+  letter-spacing: 26px;
+}
+.main-wrapper .down-sign {
+  font-weight: 500;
+  font-size: 7.5rem;
+}
+.main-wrapper .date {
+  align-self: flex-end;
+  font-weight: 600;
+  font-size: 5rem;
 }
 
 /*# sourceMappingURL=index.css.map */

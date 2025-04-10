@@ -1,0 +1,56 @@
+@use 'variables' as vars;
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &-wrapper {
+        width: 100%;
+        max-width: vars.$content-width;
+        margin-top: 80px;
+        margin-bottom: 32px;
+        display: flex;
+        flex-direction: column;
+        .preview {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            .decor-line {
+                width: 317px;
+                height: 1px;
+                background-color: hsla(0, 0%, 100%, 1);
+            }
+            .austronaut {
+                margin-right: -32px;
+            }
+            .company-info {
+                text-shadow: 0px 4px 4px hsla(0, 0%, 0%, 0.25);
+                display: flex;
+                flex-direction: column;
+                .company-type {
+                    font-size: 7rem;
+                    font-weight: 300;
+                    letter-spacing: 5.6px;
+                    align-self: center;
+                }
+                .company-name{
+                    font-size: 26rem;
+                    font-weight: 400;
+                    letter-spacing: 26px;
+                }
+                
+            }
+        }
+        .down-sign {
+            font-weight: 500;
+            font-size: 7.5rem;
+        }
+        .date {
+            align-self: flex-end;
+            font-weight: 600;
+            font-size: 5rem;
+        }
+    }
+}
+
