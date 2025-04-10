@@ -2,13 +2,14 @@
 
 .header{
    background-color: hsla(236, 5%, 8%, 0.5);
+   display: flex;
+   justify-content: center;
     .header-wrapper{
-        height: 64px;
         width: 100%;
         max-width: vars.$content-width;
-        margin: 0 auto;
         display: flex;
         justify-content: space-between;
+        height: 64px;
         align-items: center; 
         .nav {
             display: flex;
