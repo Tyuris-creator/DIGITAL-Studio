@@ -92,64 +92,76 @@ body {
   display: flex;
   column-gap: 12px;
   font-size: 3rem;
+  font-weight: 500;
 }
 .header .header-wrapper .tel-number {
   font-family: "Roboto";
   font-size: 3rem;
   color: hsl(0, 0%, 100%);
+  font-weight: 500;
 }
 
-.main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.main-wrapper {
+.main .section-wrapper {
+  margin: 0 auto;
   width: 100%;
   max-width: 1200px;
-  margin-top: 80px;
-  margin-bottom: 32px;
   display: flex;
   flex-direction: column;
 }
-.main-wrapper .preview {
+.main .section-wrapper .preview {
+  margin-top: 80px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
   align-items: center;
-  position: relative;
 }
-.main-wrapper .preview .decor-line {
+.main .section-wrapper .preview .decor-line {
   width: 317px;
   height: 1px;
   background-color: hsl(0, 0%, 100%);
+  position: relative;
+  align-self: flex-start;
+  top: 250px;
 }
-.main-wrapper .preview .austronaut {
+.main .section-wrapper .preview .austronaut {
   margin-right: -32px;
 }
-.main-wrapper .preview .company-info {
+.main .section-wrapper .preview .company-info {
   text-shadow: 0px 4px 4px hsla(0, 0%, 0%, 0.25);
   display: flex;
   flex-direction: column;
+  row-gap: 11.91px;
 }
-.main-wrapper .preview .company-info .company-type {
+.main .section-wrapper .preview .company-info__type {
   font-size: 7rem;
   font-weight: 300;
   letter-spacing: 5.6px;
   align-self: center;
+  margin-right: -30px;
 }
-.main-wrapper .preview .company-info .company-name {
+.main .section-wrapper .preview .company-info__name {
   font-size: 26rem;
   font-weight: 400;
   letter-spacing: 26px;
+  margin-right: -25px;
 }
-.main-wrapper .down-sign {
+.main .section-wrapper .down-sign {
   font-weight: 500;
   font-size: 7.5rem;
+  position: relative;
+  bottom: 91px;
+  text-shadow: 0px 4px 4px hsla(0, 0%, 0%, 0.25);
 }
-.main-wrapper .date {
+.main .section-wrapper .date {
   align-self: flex-end;
   font-weight: 600;
   font-size: 5rem;
+  margin-bottom: 32px;
+}
+.main .bg-color {
+  background-color: hsla(0, 10%, 65%, 0.25);
+}
+.main .bg-color .section-wrapper {
+  background-color: red;
 }
 
 /*# sourceMappingURL=index.css.map */
