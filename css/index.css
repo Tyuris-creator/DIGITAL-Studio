@@ -82,7 +82,7 @@ body {
   display: flex;
   justify-content: center;
 }
-.header .header-wrapper {
+.header .container {
   width: 100%;
   max-width: 1200px;
   display: flex;
@@ -90,33 +90,33 @@ body {
   height: 64px;
   align-items: center;
 }
-.header .header-wrapper .nav {
+.header .container .nav {
   display: flex;
   column-gap: 12px;
   font-size: 3rem;
   font-weight: 500;
 }
-.header .header-wrapper .tel-number {
+.header .container .tel-number {
   font-family: "Roboto";
   font-size: 3rem;
   color: hsl(0, 0%, 100%);
   font-weight: 500;
 }
 
-.main .section-wrapper {
+.main .container {
   margin: 0 auto;
   width: 100%;
   max-width: 1200px;
   display: flex;
   flex-direction: column;
 }
-.main .section-wrapper .preview {
+.main .container .preview {
   margin-top: 80px;
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-.main .section-wrapper .preview .decor-line {
+.main .container .preview .decor-line {
   width: 317px;
   height: 1px;
   background-color: hsl(0, 0%, 100%);
@@ -124,36 +124,36 @@ body {
   align-self: flex-start;
   top: 250px;
 }
-.main .section-wrapper .preview .austronaut {
+.main .container .preview .austronaut {
   margin-right: -32px;
 }
-.main .section-wrapper .preview .company-info {
+.main .container .preview .company-info {
   text-shadow: 0px 4px 4px hsla(0, 0%, 0%, 0.25);
   display: flex;
   flex-direction: column;
   row-gap: 11.91px;
 }
-.main .section-wrapper .preview .company-info .company-type {
+.main .container .preview .company-info__type {
   font-size: 7rem;
   font-weight: 300;
   letter-spacing: 5.6px;
   align-self: center;
   margin-right: -30px;
 }
-.main .section-wrapper .preview .company-info__name {
+.main .container .preview .company-info__name {
   font-size: 26rem;
   font-weight: 400;
   letter-spacing: 26px;
   margin-right: -25px;
 }
-.main .section-wrapper .down-sign {
+.main .container .down-sign {
   font-weight: 500;
   font-size: 7.5rem;
   position: relative;
   bottom: 91px;
   text-shadow: 0px 4px 4px hsla(0, 0%, 0%, 0.25);
 }
-.main .section-wrapper .date {
+.main .container .date {
   align-self: flex-end;
   font-weight: 600;
   font-size: 5rem;
@@ -163,24 +163,24 @@ body {
   background-color: hsla(0, 10%, 65%, 0.25);
   backdrop-filter: blur(20px);
 }
-.main .bg-color .section-wrapper .upper-block {
+.main .bg-color .container .upper-block {
   margin-top: 111px;
   display: flex;
   align-items: center;
   text-shadow: 0px 4px 4px hsla(0, 0%, 0%, 0.25);
 }
-.main .bg-color .section-wrapper .upper-block .logo-resize {
+.main .bg-color .container .upper-block__logo {
   width: 291px;
   height: 90px;
   align-self: flex-end;
   padding-right: 48px;
 }
-.main .bg-color .section-wrapper .upper-block .line {
+.main .bg-color .container .upper-block__line {
   background-color: hsl(0, 0%, 100%);
   width: 223px;
   height: 1px;
 }
-.main .bg-color .section-wrapper .upper-block .studio {
+.main .bg-color .container .upper-block__studio {
   font-weight: 300;
   font-size: 12rem;
   letter-spacing: 9.6px;
@@ -190,7 +190,7 @@ body {
   display: flex;
   justify-content: space-between;
 }
-.main .bg-color .bottom-block .spacecraft {
+.main .bg-color .bottom-block__spacecraft {
   width: 301px;
   align-self: flex-end;
   filter: blur(8px);
@@ -202,15 +202,15 @@ body {
   width: 594px;
   text-shadow: 0px 4px 4px hsla(0, 0%, 0%, 0.25);
 }
-.main .bg-color .bottom-block .info-text .text-one {
+.main .bg-color .bottom-block .info-text__one {
   font-weight: 500;
   font-size: 30px;
 }
-.main .bg-color .bottom-block .info-text .text-two {
+.main .bg-color .bottom-block .info-text__two {
   font-weight: 500;
   font-size: 20px;
 }
-.main .bg-color .bottom-block .info-text .text-three {
+.main .bg-color .bottom-block .info-text__three {
   font-weight: 500;
   font-size: 20px;
   margin-bottom: 68px;

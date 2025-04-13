@@ -1,7 +1,7 @@
 @use 'variables' as vars;
 
 .main{
-    .section-wrapper {
+    .container {
         margin: 0 auto;
         width: 100%;
         max-width: vars.$content-width;
@@ -29,7 +29,7 @@
                 display: flex;
                 flex-direction: column;
                 row-gap: 11.91px;
-                .company-type {
+                &__type {
                     font-size: 7rem;
                     font-weight: 300;
                     letter-spacing: 5.6px;
@@ -62,24 +62,24 @@
     .bg-color {
         background-color: hsla(0, 10%, 65%, 0.25);
         backdrop-filter: blur(20px);
-        .section-wrapper{
+        .container{
             .upper-block {
                 margin-top: 111px;
                 display: flex;
                 align-items: center;
                 text-shadow: 0px 4px 4px hsla(0, 0%, 0%, 0.25);
-                .logo-resize {
+                &__logo {
                     width: 291px;
                     height: 90px;
                     align-self: flex-end;
                     padding-right: 48px;
                 }
-                .line{
+                &__line{
                     background-color: hsla(0, 0%, 100%, 1);
                     width: 223px;
                     height: 1px;
                 }
-                .studio{
+                &__studio{
                     font-weight: 300;
                     font-size: 12rem;
                     letter-spacing: 9.6px;
@@ -90,7 +90,7 @@
         .bottom-block {
             display: flex;
             justify-content: space-between;
-            .spacecraft{
+            &__spacecraft{
                 width: 301px;
                 align-self: flex-end;
                 filter: blur(8px);
@@ -103,15 +103,15 @@
                 width: 594px;
                 text-shadow: 0px 4px 4px hsla(0, 0%, 0%, 0.25);
 
-                .text-one {
+                &__one {
                     font-weight: 500;
                     font-size: 30px;
                 }
-                .text-two {
+                &__two {
                     font-weight: 500;
                     font-size: 20px;
                 }
-                .text-three {
+                &__three {
                     font-weight: 500;
                     font-size: 20px;
                     margin-bottom: 68px;
