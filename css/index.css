@@ -73,6 +73,8 @@ body {
 
 .main-bg {
   background-image: url("../assets/imgs/background_height_2398px.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .header {
