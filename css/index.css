@@ -95,6 +95,12 @@ body {
   font-size: 3rem;
   font-weight: 500;
 }
+.header .container .nav__element {
+  transition: 0.5s;
+}
+.header .container .nav__element:hover {
+  font-size: 15px;
+}
 .header .container .tel-number {
   font-family: "Roboto";
   font-size: 3rem;

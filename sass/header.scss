@@ -15,6 +15,12 @@
             column-gap: 12px;
             font-size: 3rem;
             font-weight: 500;
+            &__element {
+                transition: 0.5s;
+            }
+            &__element:hover {
+                font-size: 15px;
+            }
         }
         .tel-number{
             font-family: 'Roboto';
