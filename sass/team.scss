@@ -1,0 +1,35 @@
+.main-bg2{
+    .container{
+        position: relative;
+        .numbers{
+            text-align: center;
+            display: flex;
+            font-weight: 400;
+            font-size: 104px;
+            justify-content: space-around;
+            padding-bottom: 32px;
+            padding-top: 52px;
+            .numbers__element{
+                width: 230px;
+            }
+        }
+        .paragraphs{
+            text-align: center;
+            display: flex;
+            font-weight: 500;
+            font-size: 32px;
+            justify-content: 
+            space-between;
+            padding-bottom: 128px;
+            &__element{
+                width: 291px;
+            }
+        }
+    }
+}
+
+.image-wrapper{
+    position: absolute;
+    right: 0;
+    top: 384px;
+}

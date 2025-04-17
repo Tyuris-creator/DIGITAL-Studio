@@ -6,7 +6,6 @@
     max-width: vars.$content-width;
     .block-one {
         padding-top: 128px;
-        padding-bottom: 68px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -17,13 +16,14 @@
             font-size: 28px;
             letter-spacing: 5.6px;
         }
-        &__line{
+        .line{
             height: 1px;
             width: 745px;
-            background-color: hsla(0, 0%, 100%, 1);
+            background-color: hsl(0, 0%, 100%);
         }
     }
     .block-two{
+        padding-top: 68px;
         display: flex;
         font-weight: 500;
         font-size: 32px;

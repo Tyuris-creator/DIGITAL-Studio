@@ -1,0 +1,22 @@
+.container{
+    .block-one_position-color{
+        color: hsla(0, 0%, 0%, 1);
+        text-decoration: none;
+        display: flex;
+        flex-direction: row-reverse;
+        padding-top: 137px;
+        justify-content: space-between;
+        padding-bottom: 68px;
+        .line_width-color{
+            width: 657px;
+            background-color: hsla(0, 0%, 0%, 1);
+        }
+    }
+    .logos {
+        display: flex;
+        padding-bottom: 128px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: flex-end;
+    }
+}

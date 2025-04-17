@@ -72,9 +72,14 @@ body {
 }
 
 .main-bg {
-  background-image: url("../assets/imgs/background (3).png");
+  background-image: url("../assets/imgs/main-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.main-bg2 {
+  background-image: url("../assets/imgs/main-bg2.png");
+  position: relative;
 }
 
 .header {
@@ -235,7 +240,6 @@ body {
 }
 .container .block-one {
   padding-top: 128px;
-  padding-bottom: 68px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -246,12 +250,13 @@ body {
   font-size: 28px;
   letter-spacing: 5.6px;
 }
-.container .block-one__line {
+.container .block-one .line {
   height: 1px;
   width: 745px;
   background-color: hsl(0, 0%, 100%);
 }
 .container .block-two {
+  padding-top: 68px;
   display: flex;
   font-weight: 500;
   font-size: 32px;
@@ -291,6 +296,60 @@ body {
 }
 .container .block-three__text-four {
   width: 291px;
+}
+
+.container .block-one_position-color {
+  color: hsl(0, 0%, 0%);
+  text-decoration: none;
+  display: flex;
+  flex-direction: row-reverse;
+  padding-top: 137px;
+  justify-content: space-between;
+  padding-bottom: 68px;
+}
+.container .block-one_position-color .line_width-color {
+  width: 657px;
+  background-color: hsl(0, 0%, 0%);
+}
+.container .logos {
+  display: flex;
+  padding-bottom: 128px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+.main-bg2 .container {
+  position: relative;
+}
+.main-bg2 .container .numbers {
+  text-align: center;
+  display: flex;
+  font-weight: 400;
+  font-size: 104px;
+  justify-content: space-around;
+  padding-bottom: 32px;
+  padding-top: 52px;
+}
+.main-bg2 .container .numbers .numbers__element {
+  width: 230px;
+}
+.main-bg2 .container .paragraphs {
+  text-align: center;
+  display: flex;
+  font-weight: 500;
+  font-size: 32px;
+  justify-content: space-between;
+  padding-bottom: 128px;
+}
+.main-bg2 .container .paragraphs__element {
+  width: 291px;
+}
+
+.image-wrapper {
+  position: absolute;
+  right: 0;
+  top: 384px;
 }
 
 /*# sourceMappingURL=index.css.map */

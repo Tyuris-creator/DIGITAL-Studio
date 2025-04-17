@@ -16,8 +16,13 @@ body {
 }
 
 .main-bg{
-    background-image: url('../assets/imgs/background\ \(3\).png');
+    background-image: url('../assets/imgs/main-bg.png');
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.main-bg2 {
+    background-image: url('../assets/imgs/main-bg2.png');
+    position: relative;
 }
 
