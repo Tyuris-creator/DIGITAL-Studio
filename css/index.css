@@ -302,35 +302,35 @@ body {
 }
 .main .bg-color {
   background-color: hsla(0, 10%, 65%, 0.25);
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(5px);
+  z-index: 1;
+}
+.main .bg-color .container {
+  row-gap: 68px;
+  margin-top: 111px;
 }
 .main .bg-color .container .container_flex-dir_row {
   display: flex;
   flex-direction: row;
   column-gap: 48px;
 }
-.main .bg-color .container .container_flex-dir_row .left-block {
-  display: flex;
-  flex-direction: column;
-}
-.main .bg-color .container .container_flex-dir_row .left-block__logo {
+.main .bg-color .container .container_flex-dir_row .logo {
   width: 291px;
-}
-.main .bg-color .container .container_flex-dir_row .left-block__spacecraft {
-  width: 301px;
+  align-self: flex-start;
 }
 .main .bg-color .container .container_flex-dir_row .right-block {
-  border: 1px solid white;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   flex: 1;
+  row-gap: 32px;
 }
 .main .bg-color .container .container_flex-dir_row .right-block .wrapper {
   display: flex;
   flex-direction: row;
   column-gap: 44px;
   align-items: center;
+  margin-top: 17px;
 }
 .main .bg-color .container .container_flex-dir_row .right-block .wrapper__studio {
   font-weight: 300;
@@ -346,8 +346,8 @@ body {
   display: flex;
   flex-direction: column;
   width: 594px;
-  border: 1px solid white;
   align-self: flex-end;
+  row-gap: 32px;
 }
 .main .bg-color .container .container_flex-dir_row .right-block .info-text__one {
   font-weight: 500;
@@ -365,6 +365,16 @@ body {
   font-weight: 600;
   font-size: 20px;
   text-align: end;
+  padding-bottom: 32px;
+}
+
+.image-cover {
+  position: relative;
+}
+.image-cover .spacecraft {
+  position: absolute;
+  top: 334.51px;
+  left: 46px;
 }
 
 .container {

@@ -129,29 +129,35 @@
     }
     .bg-color {
         background-color: hsla(0, 10%, 65%, 0.25);
-        backdrop-filter: blur(20px);
+        backdrop-filter: blur(5px);
+        z-index: 1;
         .container{
+            row-gap: 68px;
+            margin-top: 111px;
             .container_flex-dir_row{
                 display: flex;
                 flex-direction: row;
                 column-gap: 48px;
-                .left-block{
-                    display: flex;
-                    flex-direction: column;
-                    &__logo{
-                        width: 291px;
-                    }
-                    &__spacecraft{
-                        width: 301px;
-                    }
+                .logo{
+                    width: 291px;
+                    align-self: flex-start;
                 }
+                // .left-block{
+                //     display: flex;
+                //     flex-direction: column;
+                //     border: 1px solid white;
+                //     justify-content: space-between;
+                //     &__logo{
+                //         width: 291px;
+                //     }
+                // }
                 .right-block{
-                    border: 1px solid white;
                     .wrapper{
                         display: flex;
                         flex-direction: row;
                         column-gap: 44px;
                         align-items: center;
+                        margin-top: 17px;
                         &__studio {
                             font-weight: 300;
                             font-size: 48px;
@@ -167,12 +173,13 @@
                     flex-direction: column;
                     justify-content: space-between;
                     flex: 1;
+                    row-gap: 32px;
                     .info-text{
                         display: flex;
                         flex-direction: column;
                         width: 594px;
-                        border: 1px solid white;
                         align-self: flex-end;
+                        row-gap: 32px;
                         &__one{
                             font-weight: 500;
                             font-size: 30px;
@@ -192,9 +199,19 @@
                 font-weight: 600;
                 font-size: 20px;
                 text-align: end;
+                padding-bottom: 32px;
             }
         }
     }
 }
 
+
+.image-cover{
+    position: relative;
+    .spacecraft{
+        position: absolute;
+        top: 334.51px;
+        left: 46px;
+    }
+}
 
