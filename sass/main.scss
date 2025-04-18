@@ -133,31 +133,32 @@
         z-index: 1;
         .container{
             row-gap: 68px;
-            margin-top: 111px;
+            margin-top: 110px;
             .container_flex-dir_row{
                 display: flex;
                 flex-direction: row;
                 column-gap: 48px;
                 .logo{
-                    width: 291px;
-                    align-self: flex-start;
+                     width: 291px;
+                     height: 90px;
+                     align-self: flex-start;
                 }
                 // .left-block{
-                //     display: flex;
-                //     flex-direction: column;
-                //     border: 1px solid white;
-                //     justify-content: space-between;
-                //     &__logo{
-                //         width: 291px;
-                //     }
-                // }
+                //      display: flex;
+                //      flex-direction: column;
+                //      border: 1px solid white;
+                //      justify-content: space-between;
+                //      &__logo{
+                //          width: 291px;
+                //      }
+                //  }
                 .right-block{
                     .wrapper{
                         display: flex;
                         flex-direction: row;
                         column-gap: 44px;
                         align-items: center;
-                        margin-top: 17px;
+                        padding-top: 17px;
                         &__studio {
                             font-weight: 300;
                             font-size: 48px;

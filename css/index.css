@@ -307,7 +307,7 @@ body {
 }
 .main .bg-color .container {
   row-gap: 68px;
-  margin-top: 111px;
+  margin-top: 110px;
 }
 .main .bg-color .container .container_flex-dir_row {
   display: flex;
@@ -316,6 +316,7 @@ body {
 }
 .main .bg-color .container .container_flex-dir_row .logo {
   width: 291px;
+  height: 90px;
   align-self: flex-start;
 }
 .main .bg-color .container .container_flex-dir_row .right-block {
@@ -330,7 +331,7 @@ body {
   flex-direction: row;
   column-gap: 44px;
   align-items: center;
-  margin-top: 17px;
+  padding-top: 17px;
 }
 .main .bg-color .container .container_flex-dir_row .right-block .wrapper__studio {
   font-weight: 300;
