@@ -23,6 +23,7 @@
                     <a class="nav__element">Как нас найти</a>
                 </nav>
                 <a class="tel-number" href="tel:+79173183828" >+7 917 318 38 28</a>
+                <img class="menu" src="./assets/icons/menuHeaderMediaQuerry.svg" alt="Меню">
             </div>
         </header>
 
@@ -67,16 +68,22 @@
                 <p class="line"></p>
             </div>
             <div class="block-two">
-                <p class="block-two__text-one">Говорим с Вами на одном языке</p>
-                <p class="block-two__text-two">Ведем Вас к результату кратчайшим путем</p>
-                <p class="block-two__text-three">Не «привязываем» Вас к нашим услугам</p>
-                <p class="block-two__text-four">Оказываем полный спектр digital-услуг</p>
-            </div>
-            <div class="block-three">
-                <p class="block-three__text-one">У нас нет отдела продаж и назойливых менеджеров. С Вами общаются настоящие практики, которые сами работают над проектами и погружены в бизнес-процессы. Мы говорим на языке бизнеса и даем компетентные ответы на любые вопросы.</p>
-                <p class="block-three__text-two">Мы находим кратчайший путь для решения Вашей задачи. Вместо того, чтобы попутно «навешивать» лишние услуги, мы берем набор только тех инструменто, которые решат Вашу задачу и не потребуют лишних затрат.</p>
-                <p class="block-three__text-three">Работаем только с популярными системами управления сайтами (bitrix, MODx,WordPress, Joomla и т.д.). Поэтому, после запуска сайта, Вы можете либо продолжить обслуживание у нас, либо поручить это своим работникам. Или даже выбрать другого подрядчика.</p>
-                <p class="block-three__text-four">Мы закрываем большинство Ваших потребностей в сфере интернет-маркетинга. Если Вы пришли к нам за созданием сайта, то Вам больше не потребуетсяискать исполнителей для его продвижения и рекламы. Все это можно сделать у нас.</p>
+                <div class="text text_positioning">
+                    <p class="text__header">Говорим с Вами на одном языке</p>
+                    <p class="text__info">У нас нет отдела продаж и назойливых менеджеров. С Вами общаются настоящие практики, которые сами работают над проектами и погружены в бизнес-процессы. Мы говорим на языке бизнеса и даем компетентные ответы на любые вопросы.</p>
+                </div>
+                <div class="text">
+                    <p class="text__header">Ведем Вас к результату кратчайшим путем</p>
+                    <p class="text__info">Мы находим кратчайший путь для решения Вашей задачи. Вместо того, чтобы попутно «навешивать» лишние услуги, мы берем набор только тех инструменто, которые решат Вашу задачу и не потребуют лишних затрат.</p>
+                </div>
+                <div class="text">
+                    <p class="text__header">Не «привязываем» Вас к нашим услугам</p>
+                    <p class="text__info">Работаем только с популярными системами управления сайтами (bitrix, MODx,WordPress, Joomla и т.д.). Поэтому, после запуска сайта, Вы можете либо продолжить обслуживание у нас, либо поручить это своим работникам. Или даже выбрать другого подрядчика.</p>
+                </div>
+                <div class="text">
+                    <p class="text__header">Оказываем полный спектр digital-услуг</p>
+                    <p class="text__info">Мы закрываем большинство Ваших потребностей в сфере интернет-маркетинга. Если Вы пришли к нам за созданием сайта, то Вам больше не потребуетсяискать исполнителей для его продвижения и рекламы. Все это можно сделать у нас.</p>
+                </div>
             </div>
         </section>
     </div>
@@ -117,7 +124,42 @@
         </section>
         <div class="image-wrapper">
             <img class="image-wrapper__spacecraft" src="./assets/imgs/big-spacecraft.png" alt="">
-        </div> 
+        </div>
+
+        <div class="bg-color">
+            <section class="container">
+                <div class="block-one block-one_position-color">
+                    <p class="block-one__advantages">ОБРАТНАЯ СВЯЗЬ</p>
+                    <p class="line line_width-color"></p>
+                </div>
+                <form action="" class="form">
+
+                    <div class="form-wrapper">
+                        <fieldset class="name">
+                            <legend class="name__header">ФИО*</legend>
+                            <input  class="name__form" type="text" required>
+                        </fieldset>
+                        <fieldset class="comment">
+                            <legend class="comment-header">Комментарий*</legend>
+                            <input class="comment_form" type="text" required>
+                        </fieldset>
+                    </div>
+                   
+                    <fieldset class="tel-num">
+                        <legend class="tel-num__header">Номер телефона*</legend>
+                        <input class="tel-num__form" type="tel" required>
+                    </fieldset>
+
+                    <fieldset class="confirmation">
+                        <input class="confirmation__checker" type="checkbox" name="intensive-courses" id="confirmation" required>
+                        <label class="confirmation__label" for="confirmation">Согласен на обработку персональных данных. Ознакомлен с политикой конфиденциальности.</label>
+                    </fieldset>
+
+                    <button class="button" type="submit">Перезвонить</button>
+
+                </form>
+            </section>
+        </div>
     </div>
 </body>
 </html>

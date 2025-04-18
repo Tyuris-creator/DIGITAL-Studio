@@ -2,6 +2,9 @@
 
 .header{
    background-color: hsla(236, 5%, 8%, 0.5);
+   @media screen and (max-width:768px){
+    background-color: transparent;
+   }
     .container{
         margin: 0 auto;
         width: 100%;
@@ -9,7 +12,13 @@
         display: flex;
         justify-content: space-between;
         height: 64px;
-        align-items: center; 
+        align-items: center;
+        @media screen and (max-width:768px){
+            max-width: 704px;
+        }
+        @media screen and (max-width:384px){
+            max-width: 350px;
+        }
         .nav {
             display: flex;
             column-gap: 12px;
@@ -21,12 +30,26 @@
             &__element:hover {
                 font-size: 15px;
             }
+            @media screen and (max-width:768px){
+                display: none;;
+            }
         }
         .tel-number{
             font-family: 'Roboto';
             font-size: 3rem;
             color: vars.$font-color;
             font-weight: 500;
+            @media screen and (max-width:768px){
+                display: none;;
+            }
+        }
+        .menu {
+            display: none;
+            @media screen and (max-width:768px){
+                display: block;
+                padding-top: 16px;
+                padding-bottom: 16px;
+            }
         }
     }
 }
