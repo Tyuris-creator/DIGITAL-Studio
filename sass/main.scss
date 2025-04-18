@@ -7,7 +7,8 @@
         max-width: vars.$content-width;
         display: flex;
         flex-direction: column;
-        @media screen and (max-width:999px){
+        @media screen and (max-width:768px){
+            width: 100%;
             max-width: 704px;
         }
         
@@ -16,9 +17,8 @@
             display: flex;
             flex-direction: row;
             align-items: center;
-            border: 1px solid wheat;
-            @media screen and (max-width:999px){
-                justify-content: flex-start;
+            @media screen and (max-width:768px){
+                justify-content: space-between;
             }
             
             .decor-line {
@@ -28,18 +28,20 @@
                 position: relative;
                 align-self: flex-start;
                 top: 250px;
-                @media screen and (max-width:999px){
+                @media screen and (max-width:768px){
                     width: 59px;
-                    position: static;
-                    align-self: center;
+                    position: absolute;
+                    left: 0;
+                    top: 353px;
                 }
                 
             }
             .austronaut {
                 margin-right: -32px;
-                @media screen and (max-width:999px){
-                    width: 261px;
-                    height: 260px;
+                @media screen and (max-width:768px){
+                    width: 483.77px;
+                    height: 481.1px;
+                    
                 }
             }
             .company-info {
@@ -47,7 +49,7 @@
                 display: flex;
                 flex-direction: column;
                 row-gap: 11.91px;
-                @media screen and (max-width:999px){
+                @media screen and (max-width:768px){
                     row-gap: 9.61px;
                 }
                 &__type {
@@ -56,7 +58,7 @@
                     letter-spacing: 5.6px;
                     align-self: center;
                     margin-right: -30px;
-                   @media screen and (max-width:999px){
+                   @media screen and (max-width:768px){
                         font-size: 5.3875rem;
                         letter-spacing: 4.31px;
                     }
@@ -66,7 +68,7 @@
                     font-weight: 400;
                     letter-spacing: 26px;
                     margin-right: -25px;
-                    @media screen and (max-width:999px){
+                    @media screen and (max-width:768px){
                         font-size: 20rem;
                         letter-spacing: 20.015px;
                     }      
@@ -79,9 +81,11 @@
             position: relative;
             bottom: 91px;
             text-shadow: 0px 4px 4px hsla(0, 0%, 0%, 0.25);
-            @media screen and (max-width:999px){
+            @media screen and (max-width:768px){
                 font-size: 24px;
                 align-self: flex-end;
+                position: relative;
+                bottom: 75px;
             }
 
         }
@@ -90,8 +94,10 @@
             font-weight: 600;
             font-size: 5rem;
             margin-bottom: 32px;
-            @media screen and (max-width:999px){
+            
+            @media screen and (max-width:768px){
                 align-self: center;
+                margin-bottom: 24px;
             }
         }
     }

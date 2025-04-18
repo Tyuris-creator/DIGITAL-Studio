@@ -155,8 +155,9 @@ body {
   display: flex;
   flex-direction: column;
 }
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 768px) {
   .main .container {
+    width: 100%;
     max-width: 704px;
   }
 }
@@ -165,11 +166,10 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  border: 1px solid wheat;
 }
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 768px) {
   .main .container .preview {
-    justify-content: flex-start;
+    justify-content: space-between;
   }
 }
 .main .container .preview .decor-line {
@@ -180,20 +180,21 @@ body {
   align-self: flex-start;
   top: 250px;
 }
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 768px) {
   .main .container .preview .decor-line {
     width: 59px;
-    position: static;
-    align-self: center;
+    position: absolute;
+    left: 0;
+    top: 353px;
   }
 }
 .main .container .preview .austronaut {
   margin-right: -32px;
 }
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 768px) {
   .main .container .preview .austronaut {
-    width: 261px;
-    height: 260px;
+    width: 483.77px;
+    height: 481.1px;
   }
 }
 .main .container .preview .company-info {
@@ -202,7 +203,7 @@ body {
   flex-direction: column;
   row-gap: 11.91px;
 }
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 768px) {
   .main .container .preview .company-info {
     row-gap: 9.61px;
   }
@@ -214,7 +215,7 @@ body {
   align-self: center;
   margin-right: -30px;
 }
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 768px) {
   .main .container .preview .company-info__type {
     font-size: 5.3875rem;
     letter-spacing: 4.31px;
@@ -226,7 +227,7 @@ body {
   letter-spacing: 26px;
   margin-right: -25px;
 }
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 768px) {
   .main .container .preview .company-info__name {
     font-size: 20rem;
     letter-spacing: 20.015px;
@@ -239,10 +240,12 @@ body {
   bottom: 91px;
   text-shadow: 0px 4px 4px hsla(0, 0%, 0%, 0.25);
 }
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 768px) {
   .main .container .down-sign {
     font-size: 24px;
     align-self: flex-end;
+    position: relative;
+    bottom: 75px;
   }
 }
 .main .container .date {
@@ -251,9 +254,10 @@ body {
   font-size: 5rem;
   margin-bottom: 32px;
 }
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 768px) {
   .main .container .date {
     align-self: center;
+    margin-bottom: 24px;
   }
 }
 .main .bg-color {
