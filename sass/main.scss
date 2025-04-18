@@ -18,7 +18,11 @@
             flex-direction: row;
             align-items: center;
             @media screen and (max-width:768px){
+                margin-top: 48px;
                 justify-content: space-between;
+            }
+            @media screen and (max-width: 384px){
+                justify-content: flex-start;
             }
             
             .decor-line {
@@ -40,8 +44,11 @@
                 margin-right: -32px;
                 @media screen and (max-width:768px){
                     width: 483.77px;
-                    height: 481.1px;
-                    
+                    height: 481.1px;   
+                }
+                @media screen and (max-width: 384px){
+                    width: 261.13px;
+                    height: 266.77px;
                 }
             }
             .company-info {
@@ -52,6 +59,11 @@
                 @media screen and (max-width:768px){
                     row-gap: 9.61px;
                 }
+                @media screen and (max-width: 384px){
+                    row-gap: 5.18px;
+        
+                }
+
                 &__type {
                     font-size: 7rem;
                     font-weight: 300;
@@ -61,6 +73,12 @@
                    @media screen and (max-width:768px){
                         font-size: 5.3875rem;
                         letter-spacing: 4.31px;
+                        margin: 0;
+                    }
+                    @media screen and (max-width: 384px){
+                        font-size: 11.63px;
+                        letter-spacing: 2,326px;
+                        
                     }
                 }
                 &__name{
@@ -71,7 +89,12 @@
                     @media screen and (max-width:768px){
                         font-size: 20rem;
                         letter-spacing: 20.015px;
-                    }      
+                        margin: 0;
+                    }
+                    @media screen and (max-width: 384px){
+                        font-size: 43.21px;
+                        letter-spacing: 10.8025px;
+                    }     
                 }          
             }
         }
@@ -87,6 +110,9 @@
                 position: relative;
                 bottom: 75px;
             }
+            @media screen and (max-width: 384px){
+                bottom: 48px;
+            }  
 
         }
         .date {
