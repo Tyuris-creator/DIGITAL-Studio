@@ -1,6 +1,19 @@
 .main-bg2{
     .container{
         position: relative;
+        @media screen and (max-width:768px){
+            .block-one {
+                &__advantages {
+                    font-size: 22px;
+                    letter-spacing: 10.4px;
+                }
+                .line {
+                    width: 578px;
+                }
+            }
+            width: 100%;
+            max-width: 704px;
+        }
         .numbers{
             text-align: center;
             display: flex;
@@ -9,6 +22,12 @@
             justify-content: space-around;
             padding-bottom: 32px;
             padding-top: 52px;
+            @media screen and (max-width:768px){
+                padding-top: 48px;
+                font-size: 72px;
+                width: 100%;
+                max-width: 704px;
+            }
             .numbers__element{
                 width: 230px;
             }
@@ -18,11 +37,14 @@
             display: flex;
             font-weight: 500;
             font-size: 32px;
-            justify-content: 
-            space-between;
+            justify-content: space-between;
             padding-bottom: 128px;
             &__element{
                 width: 291px;
+            }
+            @media screen and (max-width:768px){
+                padding-bottom: 64px;
+                font-size: 24px;
             }
         }
     }

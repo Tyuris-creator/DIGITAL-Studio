@@ -7,9 +7,24 @@
         padding-top: 137px;
         justify-content: space-between;
         padding-bottom: 68px;
+        @media screen and (max-width:768px){
+            width: 100%;
+            max-width: 704px;
+            padding-top: 86px;
+            .block-one__advantages{
+                font-size: 22px;
+                letter-spacing: 4.4px;
+                width: 430px;
+            }
+        }
         .line_width-color{
             width: 657px;
             background-color: hsla(0, 0%, 0%, 1);
+            @media screen and (max-width:768px){
+                width: 323px;
+                position: relative;
+                left: -32px;
+            }
         }
     }
     .logos {
@@ -18,5 +33,15 @@
         justify-content: space-between;
         flex-wrap: wrap;
         align-items: flex-end;
+        @media screen and (max-width:768px){
+            .logos_five, .logos_six{
+                display: none;
+            }
+            .logos_one, .logos_two, .logos_three, .logos_four {
+                width: 150px;
+            }
+            justify-content: space-between;
+            padding-bottom: 81px;
+        }
     }
 }

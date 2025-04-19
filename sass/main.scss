@@ -131,27 +131,46 @@
         background-color: hsla(0, 10%, 65%, 0.25);
         backdrop-filter: blur(5px);
         z-index: 1;
+        overflow: hidden;
         .container{
             row-gap: 68px;
-            margin-top: 110px;
+            @media screen and (max-width:768px){
+                width: 100%;
+                max-width: 704px;
+            }
             .container_flex-dir_row{
+                margin-top: 110px;
                 display: flex;
                 flex-direction: row;
                 column-gap: 48px;
-                .logo{
-                     width: 291px;
-                     height: 90px;
-                     align-self: flex-start;
+                @media screen and (max-width:768px){
+                    margin-top: 86px;
                 }
-                // .left-block{
-                //      display: flex;
-                //      flex-direction: column;
-                //      border: 1px solid white;
-                //      justify-content: space-between;
-                //      &__logo{
-                //          width: 291px;
-                //      }
-                //  }
+                // .logo{
+                //      width: 291px;
+                //      height: 90px;
+                //      align-self: flex-start;
+                // }
+                .left-block{
+                     display: flex;
+                     flex-direction: column;
+                     justify-content: space-between;
+                     position: relative;
+                     &__logo{
+                        width: 291px;
+                        @media screen and (max-width:768px){
+                            width: 157px;
+                        }
+                     }
+                     .spacecraft{
+                        width: 291px;
+                        position: absolute;
+                        left: 86px;
+                        top: 213.51px;
+                        z-index: -1;
+                        filter: blur(5px);
+                     }
+                 }
                 .right-block{
                     .wrapper{
                         display: flex;
@@ -159,15 +178,29 @@
                         column-gap: 44px;
                         align-items: center;
                         padding-top: 17px;
+                        
+                        @media screen and (max-width:768px){
+                            padding-top: 5px;
+                            column-gap: 24px;
+                            width: 523px;
+                        }
                         &__studio {
                             font-weight: 300;
                             font-size: 48px;
                             letter-spacing: 9.6px;
+                            @media screen and (max-width:768px){
+                                font-weight: 300;
+                                font-size: 32px;
+                                letter-spacing: 6.4px;
+                            }
                         }
                         &__line{
                             width: 223px;
                             height: 1px;
                             background-color: white;
+                            @media screen and (max-width:768px){
+                                width: 160px;
+                            }
                         }
                     }
                     display: flex;
@@ -181,17 +214,29 @@
                         width: 594px;
                         align-self: flex-end;
                         row-gap: 32px;
+                        @media screen and (max-width:768px){
+                            width: 519px;       
+                        }
                         &__one{
                             font-weight: 500;
                             font-size: 30px;
+                            @media screen and (max-width:768px){
+                                font-size: 24px;       
+                            }
                         }
                         &__two{
                             font-weight: 500;
                             font-size: 20px;
+                            @media screen and (max-width:768px){
+                                font-size: 18px;         
+                            }
                         }
                         &__three{
                             font-weight: 500;
                             font-size: 20px;
+                            @media screen and (max-width:768px){
+                                font-size: 18px;         
+                            }
                         }
                     }
                 }
@@ -201,6 +246,9 @@
                 font-size: 20px;
                 text-align: end;
                 padding-bottom: 32px;
+                @media screen and (max-width:768px){
+                    padding-bottom: 64px;
+                }
             }
         }
     }
