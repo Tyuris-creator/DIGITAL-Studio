@@ -1,4 +1,8 @@
 .container{
+    @media screen and (max-width: 384px){
+        width: 100%;
+        max-width: 350px;
+    }
     .block-one_position-color{
         color: hsla(0, 0%, 0%, 1);
         text-decoration: none;
@@ -15,7 +19,16 @@
                 font-size: 22px;
                 letter-spacing: 4.4px;
                 width: 430px;
+                @media screen and (max-width: 384px){
+                    width: 206px;
+                    text-align: center;
+                }
             }
+        }
+        @media screen and (max-width: 384px){
+            display: flex;
+            flex-direction: column;
+            row-gap: 42px;
         }
         .line_width-color{
             width: 657px;
@@ -24,6 +37,10 @@
                 width: 323px;
                 position: relative;
                 left: -32px;
+            }
+            @media screen and (max-width: 384px){
+                width: 172px;
+                position: static;
             }
         }
     }
@@ -42,6 +59,14 @@
             }
             justify-content: space-between;
             padding-bottom: 81px;
+        }
+        @media screen and (max-width: 384px){
+            justify-content:  center;
+            column-gap: 10px;
+            .logos_five, .logos_six{
+                display: block;
+                width: 150px;
+            }
         }
     }
 }

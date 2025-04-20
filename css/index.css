@@ -348,6 +348,12 @@ body {
   z-index: -1;
   filter: blur(5px);
 }
+@media screen and (max-width: 768px) {
+  .main .bg-color .container .container_flex-dir_row .left-block .spacecraft {
+    position: static;
+    width: 167.07px;
+  }
+}
 .main .bg-color .container .container_flex-dir_row .right-block {
   display: flex;
   flex-direction: column;
@@ -440,15 +446,6 @@ body {
   .main .bg-color .container .year {
     padding-bottom: 64px;
   }
-}
-
-.image-cover {
-  position: relative;
-}
-.image-cover .spacecraft {
-  position: absolute;
-  top: 334.51px;
-  left: 46px;
 }
 
 .container {
@@ -547,6 +544,12 @@ body {
   justify-content: space-between;
 }
 
+@media screen and (max-width: 384px) {
+  .container {
+    width: 100%;
+    max-width: 350px;
+  }
+}
 .container .block-one_position-color {
   color: hsl(0, 0%, 0%);
   text-decoration: none;
@@ -568,6 +571,19 @@ body {
     width: 430px;
   }
 }
+@media screen and (max-width: 768px) and (max-width: 384px) {
+  .container .block-one_position-color .block-one__advantages {
+    width: 206px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 384px) {
+  .container .block-one_position-color {
+    display: flex;
+    flex-direction: column;
+    row-gap: 42px;
+  }
+}
 .container .block-one_position-color .line_width-color {
   width: 657px;
   background-color: hsl(0, 0%, 0%);
@@ -577,6 +593,12 @@ body {
     width: 323px;
     position: relative;
     left: -32px;
+  }
+}
+@media screen and (max-width: 384px) {
+  .container .block-one_position-color .line_width-color {
+    width: 172px;
+    position: static;
   }
 }
 .container .logos {
@@ -598,57 +620,88 @@ body {
     width: 150px;
   }
 }
-
-.main-bg2 .container {
-  position: relative;
+@media screen and (max-width: 384px) {
+  .container .logos {
+    justify-content: center;
+    column-gap: 10px;
+  }
+  .container .logos .logos_five, .container .logos .logos_six {
+    display: block;
+    width: 150px;
+  }
 }
+
 @media screen and (max-width: 768px) {
   .main-bg2 .container {
     width: 100%;
     max-width: 704px;
   }
+}
+@media screen and (max-width: 384px) {
+  .main-bg2 .container {
+    width: 100%;
+    max-width: 350px;
+  }
+}
+.main-bg2 .container .block-one {
+  padding-bottom: 52px;
+}
+@media screen and (max-width: 384px) {
+  .main-bg2 .container .block-one {
+    display: flex;
+    flex-direction: column;
+    row-gap: 42px;
+  }
   .main-bg2 .container .block-one__advantages {
-    font-size: 22px;
-    letter-spacing: 10.4px;
+    text-align: center;
   }
   .main-bg2 .container .block-one .line {
-    width: 578px;
+    width: 172px;
+    position: static;
+    align-self: center;
   }
 }
-.main-bg2 .container .numbers {
-  text-align: center;
+.main-bg2 .container .info {
   display: flex;
-  font-weight: 400;
-  font-size: 104px;
-  justify-content: space-around;
-  padding-bottom: 32px;
-  padding-top: 52px;
-}
-@media screen and (max-width: 768px) {
-  .main-bg2 .container .numbers {
-    padding-top: 48px;
-    font-size: 72px;
-    width: 100%;
-    max-width: 704px;
-  }
-}
-.main-bg2 .container .numbers .numbers__element {
-  width: 230px;
-}
-.main-bg2 .container .paragraphs {
-  text-align: center;
-  display: flex;
-  font-weight: 500;
-  font-size: 32px;
   justify-content: space-between;
+  flex-wrap: wrap;
+}
+.main-bg2 .container .info .info-block {
+  width: 291px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 32px;
   padding-bottom: 128px;
 }
-.main-bg2 .container .paragraphs__element {
-  width: 291px;
+@media screen and (max-width: 768px) {
+  .main-bg2 .container .info .info-block {
+    width: 161px;
+    padding-bottom: 64px;
+  }
+}
+@media screen and (max-width: 388px) {
+  .main-bg2 .container .info .info-block {
+    width: 172px;
+  }
+}
+.main-bg2 .container .info .info-block__num-el {
+  font-weight: 400;
+  font-size: 104px;
+  align-self: center;
 }
 @media screen and (max-width: 768px) {
-  .main-bg2 .container .paragraphs {
-    padding-bottom: 64px;
+  .main-bg2 .container .info .info-block__num-el {
+    font-size: 72px;
+  }
+}
+.main-bg2 .container .info .info-block__text-el {
+  font-weight: 500;
+  font-size: 32px;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .main-bg2 .container .info .info-block__text-el {
     font-size: 24px;
   }
 }
@@ -657,6 +710,7 @@ body {
   position: absolute;
   right: 0;
   top: 384px;
+  z-index: -1;
 }
 
 .bg-color {
