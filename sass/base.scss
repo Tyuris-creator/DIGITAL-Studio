@@ -24,5 +24,27 @@ body {
 .main-bg2 {
     background-image: url('../assets/imgs/main-bg2.png');
     position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+@media screen and (max-width: 768px){
+    .main-bg{
+        background-image: url('../assets/imgs/tabletBackground.png');
+    }
+    .main-bg2{
+        background-image: url('../assets/imgs/tabletBackground2.png');
+    }
+}
+
+
+@media screen and (max-width: 384px){
+    .main-bg{
+        background-image: url('../assets/imgs/mobileBackground.png');
+    }
+    .main-bg2{
+        background-image: url('../assets/imgs/mobileBackground2.png');
+    }
 }
 

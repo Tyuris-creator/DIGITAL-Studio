@@ -11,7 +11,10 @@
             width: 100%;
             max-width: 704px;
         }
-        
+        @media screen and (max-width: 384px){
+            width: 100%;
+            max-width: 350px;
+        }
         .preview {
             margin-top: 80px;
             display: flex;
@@ -61,7 +64,6 @@
                 }
                 @media screen and (max-width: 384px){
                     row-gap: 5.18px;
-        
                 }
 
                 &__type {
@@ -77,8 +79,7 @@
                     }
                     @media screen and (max-width: 384px){
                         font-size: 11.63px;
-                        letter-spacing: 2,326px;
-                        
+                        letter-spacing: 2,326px
                     }
                 }
                 &__name{
@@ -111,6 +112,7 @@
                 bottom: 75px;
             }
             @media screen and (max-width: 384px){
+                padding-top: 100px;
                 bottom: 48px;
             }  
 
@@ -138,6 +140,10 @@
                 width: 100%;
                 max-width: 704px;
             }
+            @media screen and (max-width: 384px){
+                width: 100%;
+                max-width: 350px;
+            }
             .container_flex-dir_row{
                 margin-top: 110px;
                 display: flex;
@@ -156,10 +162,16 @@
                      flex-direction: column;
                      justify-content: space-between;
                      position: relative;
+                     @media screen and (max-width: 384px){
+                        position: absolute;
+                    }
                      &__logo{
                         width: 291px;
                         @media screen and (max-width:768px){
                             width: 157px;
+                        }
+                        @media screen and (max-width: 384px){
+                            display: none;
                         }
                      }
                      .spacecraft{
@@ -173,6 +185,9 @@
                             position: static;
                             width: 167.07px;
                             
+                        }
+                        @media screen and (max-width: 384px){
+                            position: absolute;
                         }
                      }
                  }
@@ -188,6 +203,13 @@
                             padding-top: 5px;
                             column-gap: 24px;
                             width: 523px;
+                        }
+                        @media screen and (max-width: 384px){
+                            display: flex;
+                            flex-direction: column-reverse;
+                            row-gap: 32px;
+                            align-items: center;
+                            width: 351px;
                         }
                         &__studio {
                             font-weight: 300;
@@ -222,6 +244,11 @@
                         @media screen and (max-width:768px){
                             width: 519px;       
                         }
+                        @media screen and (max-width: 384px){
+                            align-self: center;
+                            text-align: center;
+                            width: 352px;
+                        }
                         &__one{
                             font-weight: 500;
                             font-size: 30px;
@@ -240,7 +267,8 @@
                             font-weight: 500;
                             font-size: 20px;
                             @media screen and (max-width:768px){
-                                font-size: 18px;         
+                                font-size: 18px; 
+                                padding-bottom: 64px;   
                             }
                         }
                     }
@@ -253,6 +281,9 @@
                 padding-bottom: 32px;
                 @media screen and (max-width:768px){
                     padding-bottom: 64px;
+                }
+                @media screen and (max-width: 384px){
+                    display: none;
                 }
             }
         }
