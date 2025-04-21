@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("../assets/fonts/Roboto.ttf");
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -57,10 +61,6 @@ nav {
   cursor: pointer;
 }
 
-@font-face {
-  font-family: "Roboto";
-  src: url("../assets/fonts/Roboto.ttf");
-}
 html {
   font-size: 4px;
 }
