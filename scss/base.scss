@@ -1,0 +1,50 @@
+@use 'mixin' as mixin;
+
+html{
+    font-size: 4px;
+}
+body {
+    font-family: 'Roboto';
+    font-size: 4rem;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    @media screen and (max-width: 768px){
+        max-width: 704px;
+    }
+    @media screen and (max-width: 426px) {
+        max-width: 352px;
+    }
+}
+
+.burger {
+    display: none;
+    @media screen and (max-width: 768px){
+        display: block;
+    }
+}
+
+.block1{
+    background-image: url('../assets/images/background1Desktop.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    @media screen and (max-width: 768px){
+        background-image: url('../assets/images/background1Tablet.png');
+    }
+    @media screen and (max-width: 425px) {
+        background-image: url('../assets/images/background1Mobile.png');
+    }
+}

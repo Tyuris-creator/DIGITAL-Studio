@@ -1,0 +1,127 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("../assets/font/Roboto-Light.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../assets/font/Roboto-Medium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../assets/font/Roboto-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../assets/font/Roboto-SemiBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 600;
+}
+html {
+  font-size: 4px;
+}
+
+body {
+  font-family: "Roboto";
+  font-size: 4rem;
+  font-weight: 500;
+  color: #FFFFFF;
+}
+
+a {
+  text-decoration: none;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 704px;
+  }
+}
+@media screen and (max-width: 426px) {
+  .container {
+    max-width: 352px;
+  }
+}
+
+.burger {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .burger {
+    display: block;
+  }
+}
+
+.block1 {
+  background-image: url("../assets/images/background1Desktop.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 768px) {
+  .block1 {
+    background-image: url("../assets/images/background1Tablet.png");
+  }
+}
+@media screen and (max-width: 425px) {
+  .block1 {
+    background-image: url("../assets/images/background1Mobile.png");
+  }
+}
+
+.header {
+  background-color: hsla(236, 5%, 8%, 0.5);
+  height: 64px;
+  display: flex;
+  font-size: 3rem;
+}
+@media screen and (max-width: 768px) {
+  .header {
+    background-color: transparent;
+    height: 80px;
+  }
+}
+.header .container_flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: center;
+}
+.header .container_flex .nav {
+  display: flex;
+  column-gap: 12px;
+  height: 23px;
+}
+.header .container_flex .nav__el {
+  align-self: center;
+  transition: 0.4s;
+}
+.header .container_flex .nav__el:hover {
+  font-weight: 600;
+  font-size: 5rem;
+}
+@media screen and (max-width: 1024px) {
+  .header .container_flex .nav {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header .container_flex .tel {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
