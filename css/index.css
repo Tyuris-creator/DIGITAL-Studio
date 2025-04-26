@@ -130,6 +130,16 @@ a {
   margin-top: 80px;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+@media screen and (max-width: 768px) {
+  .container .preview {
+    margin-top: 48px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .container .preview {
+    margin: 0px;
+  }
+}
 .container .preview .decor-line {
   height: 1px;
   background-color: #FFFFFF;
@@ -138,12 +148,19 @@ a {
   position: relative;
   top: 260px;
 }
+@media screen and (max-width: 768px) {
+  .container .preview .decor-line {
+    position: absolute;
+    top: 353px;
+    left: 0;
+    width: 59px;
+  }
+}
 .container .preview .astronaut {
   margin-right: -30px;
 }
 .container .preview .info {
   align-self: center;
-  width: fit-content;
 }
 .container .preview .info__type {
   font-weight: 300;
@@ -153,6 +170,12 @@ a {
   margin-right: -5px;
   padding-bottom: 11.91px;
 }
+@media screen and (max-width: 768px) {
+  .container .preview .info__type {
+    font-size: 5.3875rem;
+    letter-spacing: 4.31px;
+  }
+}
 .container .preview .info__name {
   font-weight: 400;
   font-size: 104px;
@@ -161,16 +184,35 @@ a {
 .container .preview .info__name .info_position {
   letter-spacing: 0;
 }
+@media screen and (max-width: 768px) {
+  .container .preview .info__name {
+    font-size: 20.015rem;
+    letter-spacing: 20.015px;
+  }
+}
 .container .down-sign {
   font-size: 7.5rem;
   position: relative;
   bottom: 68px;
+}
+@media screen and (max-width: 768px) {
+  .container .down-sign {
+    text-align: end;
+    font-size: 6rem;
+    bottom: 75px;
+  }
 }
 .container .date {
   font-weight: 600;
   font-size: 5rem;
   text-align: end;
   padding-bottom: 32px;
+}
+@media screen and (max-width: 768px) {
+  .container .date {
+    text-align: center;
+    padding-bottom: 24px;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
