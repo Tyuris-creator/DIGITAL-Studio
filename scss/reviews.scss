@@ -1,0 +1,6 @@
+@use 'mixin' as mixin;
+
+.line-reviews {
+    @include mixin.line(#ffffff, 1008px);
+    align-self: center;
+}

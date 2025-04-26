@@ -416,6 +416,7 @@ a {
   justify-content: space-between;
   padding-top: 68px;
   padding-bottom: 128px;
+  flex-wrap: wrap;
 }
 
 .block2 .info {
@@ -434,6 +435,77 @@ a {
   font-weight: 400;
   font-size: 104px;
   padding-bottom: 32px;
+}
+
+.bg-color2 {
+  background-color: hsla(0, 0%, 0%, 0.5);
+}
+.bg-color2 .block-even_color {
+  color: hsl(0, 0%, 100%);
+}
+.bg-color2 .line {
+  height: 1px;
+  background-color: #ffffff;
+  width: 848px;
+}
+.bg-color2 .form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+  padding-bottom: 128px;
+  padding-top: 68px;
+}
+.bg-color2 .form .wrapper {
+  display: flex;
+  column-gap: 12px;
+}
+.bg-color2 .form .wrapper .form__block {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.bg-color2 .form .form__block {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  font-size: 23px;
+}
+.bg-color2 .form .form__block .label {
+  padding-top: 16px;
+}
+.bg-color2 .form .form__block .input {
+  border: none;
+  border-bottom: 4px solid hsl(0, 0%, 100%);
+  background-color: transparent;
+  height: 41px;
+  color: #ffffff;
+}
+.bg-color2 .form .agreement {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 23px;
+  column-gap: 16px;
+}
+.bg-color2 .form .form__submit {
+  width: 594px;
+  height: 48px;
+  background-color: hsl(260, 40%, 53%);
+  align-self: center;
+  font-size: 20px;
+  color: hsl(0, 0%, 100%);
+}
+
+input[type=checkbox] {
+  transform: scale(2);
+}
+
+.line-reviews {
+  height: 1px;
+  background-color: #ffffff;
+  width: 1008px;
+  align-self: center;
 }
 
 /*# sourceMappingURL=index.css.map */
