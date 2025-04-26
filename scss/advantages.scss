@@ -1,0 +1,32 @@
+@use 'mixin' as mixin;
+
+.block-odd {
+    display: flex;
+    padding-top: 128px;
+    font-size: 28px;
+    letter-spacing: 5.6px;
+    font-weight: 300;
+    justify-content: space-between;
+    .line {
+        @include mixin.line(#FFFFFF, 745px);
+        align-self: center;
+    }
+}
+
+.block-two {
+    padding-top: 68px;
+    display: flex;
+    padding-bottom: 64px;
+    column-gap: 12px;
+    flex-wrap: wrap;
+    .text {
+        width: 291px;
+        &__header {
+            font-size: 32px;
+            height: 114px;
+        }
+        &__info {
+            font-size: 20px;
+        }
+    }
+}

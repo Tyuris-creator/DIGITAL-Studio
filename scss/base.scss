@@ -48,3 +48,18 @@ a {
         background-image: url('../assets/images/background1Mobile.png');
     }
 }
+
+
+.block2{
+    background-image: url('../assets/images/background2Desktop.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    @media screen and (max-width: 768px){
+        background-image: url('../assets/images/background2Tablet.png');
+    }
+    @media screen and (max-width: 425px) {
+        background-image: url('../assets/images/background2Mobile.png');
+    }
+}
