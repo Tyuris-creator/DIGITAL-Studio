@@ -3,3 +3,9 @@
     justify-content: space-between;
     align-items: center;
 }
+
+@mixin line($color:#FFFFFF, $width){
+    height: 1px;
+    background-color: $color;
+    width: $width;
+}
