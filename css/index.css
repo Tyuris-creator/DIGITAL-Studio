@@ -259,10 +259,29 @@ a {
   font-size: 20px;
   padding: 111px 0 32px 0;
 }
+@media screen and (max-width: 768px) {
+  .about {
+    padding: 86px 0 64px 0;
+  }
+}
 .about__header {
   display: flex;
   align-items: center;
   gap: 44px;
+}
+@media screen and (max-width: 768px) {
+  .about__header {
+    column-gap: 24px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .about__header {
+    flex-direction: column-reverse;
+    row-gap: 32px;
+  }
+  .about__header .logo {
+    display: none;
+  }
 }
 .about__header-line {
   height: 1px;
@@ -270,11 +289,23 @@ a {
   width: 223px;
   align-self: center;
 }
+@media screen and (max-width: 768px) {
+  .about__header-line {
+    width: 150px;
+  }
+}
 .about__header-title {
   font-size: 48px;
   letter-spacing: 9.6px;
   font-weight: 300;
   margin-left: -4px;
+}
+@media screen and (max-width: 768px) {
+  .about__header-title {
+    font-size: 32px;
+    letter-spacing: 6.4px;
+    margin: 0;
+  }
 }
 .about__inner {
   max-width: 594px;
@@ -286,10 +317,43 @@ a {
 .about__inner .about__inner-item:first-of-type {
   font-size: 30px;
 }
+@media screen and (max-width: 768px) {
+  .about__inner .about__inner-item:first-of-type {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about__inner {
+    row-gap: 24px;
+    font-size: 18px;
+    width: 519px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .about__inner {
+    padding-top: 24px;
+    flex-direction: column;
+    text-align: center;
+    width: 352px;
+    row-gap: 12px;
+  }
+}
 .about__year {
   text-align: end;
   padding-top: 68px;
   font-weight: 600;
+}
+@media screen and (max-width: 768px) {
+  .about__year {
+    padding-top: 24px;
+    text-align: start;
+    padding-left: 185px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .about__year {
+    display: none;
+  }
 }
 
 .image-wrapper {
@@ -300,6 +364,13 @@ a {
   top: 190px;
   left: 45px;
   filter: blur(5px);
+}
+@media screen and (max-width: 768px) {
+  .image-wrapper .spacecraft {
+    top: 139px;
+    left: 0;
+    z-index: -1;
+  }
 }
 
 .block-odd {
