@@ -364,12 +364,40 @@ a {
   font-weight: 300;
   justify-content: space-between;
 }
+@media screen and (max-width: 768px) {
+  .block-odd {
+    padding-top: 86px;
+    font-size: 22px;
+    letter-spacing: 4.4px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .block-odd {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 42px;
+  }
+}
 .block-odd .line {
   height: 1px;
   background-color: #FFFFFF;
   width: 745px;
   align-self: center;
   align-self: center;
+}
+@media screen and (max-width: 768px) {
+  .block-odd .line {
+    width: 392px;
+    position: absolute;
+    right: 0;
+  }
+}
+@media screen and (max-width: 425px) {
+  .block-odd .line {
+    position: static;
+    width: 172px;
+  }
 }
 
 .block-two {
@@ -379,15 +407,53 @@ a {
   column-gap: 12px;
   flex-wrap: wrap;
 }
+@media screen and (max-width: 1200px) {
+  .block-two {
+    padding-top: 48px;
+    row-gap: 48px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .block-two {
+    padding-top: 24px;
+    text-align: center;
+    padding-bottom: 48px;
+  }
+}
 .block-two .text {
+  display: flex;
+  flex-direction: column;
   width: 291px;
+  row-gap: 32px;
+}
+@media screen and (max-width: 768px) {
+  .block-two .text {
+    width: 344px;
+    row-gap: 24px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .block-two .text {
+    width: 352px;
+  }
 }
 .block-two .text__header {
   font-size: 32px;
   height: 114px;
 }
+@media screen and (max-width: 768px) {
+  .block-two .text__header {
+    font-size: 24px;
+    height: 56px;
+  }
+}
 .block-two .text__info {
   font-size: 20px;
+}
+@media screen and (max-width: 768px) {
+  .block-two .text__info {
+    font-size: 18px;
+  }
 }
 
 .block-even_reverse {
