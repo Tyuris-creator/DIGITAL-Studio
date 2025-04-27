@@ -1,6 +1,60 @@
 @use 'mixin' as mixin;
-
 .line-reviews {
     @include mixin.line(#ffffff, 1008px);
     align-self: center;
+}
+.grid-container {
+    margin-top: 68px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "column-one column-two column-three column-four"
+                         "column-one column-five column-five column-five";
+    column-gap: 12px;
+    row-gap: 12px;
+
+    .column-one {
+        grid-area: column-one;
+    }
+    .column-two {
+        grid-area: column-two;
+    }
+    .column-three {
+        grid-area: column-three;
+    }
+    .column-four {
+        grid-area: column-four;
+    }
+    .column-five {
+        grid-area: column-five;
+    }
+    .column {
+        font-size: 20px;
+        background-color: hsla(0, 10%, 65%, 0.25);
+        backdrop-filter: blur(20px);
+        padding: 24px 12px 0 12px;
+
+        .column__header {
+            font-size: 32px;
+        }
+        .column__author {
+            padding-top: 12px;
+            padding-bottom: 32px;
+        }
+    }
+    .column:nth-child(2){
+        background-color: hsla(260, 40%, 53%, 1);
+        text-align: center;
+        .column__header {
+          text-align: start;
+          padding-bottom: 23px;
+        }
+        .document {
+            margin-bottom: 26px;
+        }
+    }
+    .column:nth-child(4) {
+        .column__header {
+            padding-bottom: 29px;
+        }
+    }
 }

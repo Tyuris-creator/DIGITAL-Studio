@@ -8,6 +8,8 @@ body {
     font-size: 4rem;
     font-weight: 500;
     color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
 }
 
 a {
@@ -39,8 +41,6 @@ a {
     background-image: url('../assets/images/background1Desktop.png');
     background-repeat: no-repeat;
     background-size: cover;
-    display: flex;
-    flex-direction: column;
     @media screen and (max-width: 768px){
         background-image: url('../assets/images/background1Tablet.png');
     }
@@ -54,8 +54,6 @@ a {
     background-image: url('../assets/images/background2Desktop.png');
     background-repeat: no-repeat;
     background-size: cover;
-    display: flex;
-    flex-direction: column;
     @media screen and (max-width: 768px){
         background-image: url('../assets/images/background2Tablet.png');
     }
@@ -63,3 +61,5 @@ a {
         background-image: url('../assets/images/background2Mobile.png');
     }
 }
+
+
