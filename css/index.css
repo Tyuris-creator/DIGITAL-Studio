@@ -468,6 +468,22 @@ a {
   font-weight: 300;
   justify-content: space-between;
 }
+@media screen and (max-width: 768px) {
+  .block-even {
+    padding-top: 86px;
+    font-size: 22px;
+    letter-spacing: 4.4px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .block-even {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    row-gap: 16px;
+  }
+}
 .block-even__text {
   color: #000000;
 }
@@ -478,6 +494,19 @@ a {
   align-self: center;
   align-self: center;
 }
+@media screen and (max-width: 768px) {
+  .block-even .line {
+    position: absolute;
+    width: 323px;
+    left: 0;
+  }
+}
+@media screen and (max-width: 425px) {
+  .block-even .line {
+    position: static;
+    width: 172px;
+  }
+}
 
 .logos {
   display: flex;
@@ -485,6 +514,25 @@ a {
   padding-top: 68px;
   padding-bottom: 128px;
   flex-wrap: wrap;
+}
+@media screen and (max-width: 1140px) {
+  .logos .CDEK, .logos .bitrix {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .logos {
+    padding-bottom: 81px;
+    padding-top: 48px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .logos {
+    padding-top: 24px;
+  }
+  .logos .CDEK, .logos .bitrix {
+    display: block;
+  }
 }
 
 .block2 .info {
