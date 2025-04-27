@@ -689,21 +689,24 @@ a {
   margin-top: 34px;
   position: relative;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1180px) {
   .example {
     margin-top: 48px;
+    padding-bottom: 64px;
+    text-align: start;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 426px) {
   .example {
     margin-top: 24px;
     text-align: center;
+    padding-bottom: 48px;
   }
 }
 .example-info {
   display: flex;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1180px) {
   .example-info {
     flex-direction: column;
     row-gap: 24px;
@@ -714,7 +717,7 @@ a {
   position: relative;
   top: 69px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1180px) {
   .example-info__header {
     font-size: 28px;
     top: 0;
@@ -725,24 +728,23 @@ a {
   flex-direction: column;
   row-gap: 12px;
   font-size: 20px;
-  width: 392px;
   position: absolute;
   top: 171px;
+  width: 392px;
 }
 .example .wrapper .thin {
   font-weight: 300;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1180px) {
   .example .wrapper {
     font-size: 18px;
-    width: fit-content;
     position: static;
-    padding-bottom: 64px;
+    width: fit-content;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 426px) {
   .example .wrapper {
-    padding-bottom: 48px;
+    row-gap: 24px;
   }
 }
 
