@@ -720,6 +720,21 @@ a {
   width: 937px;
   align-self: center;
 }
+@media screen and (max-width: 768px) {
+  .line-portfolio {
+    width: 542px;
+    position: absolute;
+    align-self: center;
+    left: 0;
+  }
+}
+@media screen and (max-width: 426px) {
+  .line-portfolio {
+    width: 172px;
+    position: static;
+    margin-top: 26px;
+  }
+}
 
 .example {
   color: #000000;
@@ -728,13 +743,36 @@ a {
   margin-top: 34px;
   position: relative;
 }
+@media screen and (max-width: 768px) {
+  .example {
+    margin-top: 48px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .example {
+    margin-top: 24px;
+    text-align: center;
+  }
+}
 .example-info {
   display: flex;
+}
+@media screen and (max-width: 768px) {
+  .example-info {
+    flex-direction: column;
+    row-gap: 24px;
+  }
 }
 .example-info__header {
   font-size: 30px;
   position: relative;
   top: 69px;
+}
+@media screen and (max-width: 768px) {
+  .example-info__header {
+    font-size: 28px;
+    top: 0;
+  }
 }
 .example .wrapper {
   display: flex;
@@ -747,6 +785,19 @@ a {
 }
 .example .wrapper .thin {
   font-weight: 300;
+}
+@media screen and (max-width: 768px) {
+  .example .wrapper {
+    font-size: 18px;
+    width: fit-content;
+    position: static;
+    padding-bottom: 64px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .example .wrapper {
+    padding-bottom: 48px;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

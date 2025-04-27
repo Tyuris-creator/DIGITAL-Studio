@@ -1,7 +1,18 @@
 @use 'mixin' as mixin;
 
 .line-portfolio {
-    @include mixin.line(#000000, 937px)
+    @include mixin.line(#000000, 937px);
+    @media screen and (max-width:768px){
+        width: 542px;
+        position: absolute;
+        align-self: center;
+        left: 0;
+    }
+    @media screen and (max-width:426px){
+        width: 172px;
+        position: static;
+        margin-top: 26px;
+    }
 }
 
 .example {
@@ -10,13 +21,28 @@
     flex-direction: column;
     margin-top: 34px;
     position: relative;
+    @media screen and (max-width:768px){
+        margin-top: 48px;
+    }
+    @media screen and (max-width:768px){
+        margin-top: 24px;
+        text-align: center;
+    }
 
     &-info {
         display: flex;
+        @media screen and (max-width:768px){
+            flex-direction: column;
+            row-gap: 24px;
+        }
         &__header{
             font-size: 30px;
             position: relative;
             top: 69px;
+            @media screen and (max-width:768px){
+                font-size: 28px;
+                top: 0;
+            }
         }
     }
     .wrapper {
@@ -29,6 +55,15 @@
         top: 171px;
         .thin {
             font-weight: 300;
+        }
+        @media screen and (max-width:768px){
+            font-size: 18px;
+            width: fit-content;
+            position: static;
+            padding-bottom: 64px;
+        }
+        @media screen and (max-width:768px){
+            padding-bottom: 48px;
         }
     }
 }
