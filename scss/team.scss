@@ -1,18 +1,48 @@
 .block2 {
+    @media screen and (max-width: 768px){
+        .line {
+            width: 578px;
+        }
+    }
+    @media screen and (max-width: 425px){
+        .line {
+            width: 172px;
+        }
+    }
     .info {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         padding-top: 52px;
         padding-bottom: 128px;
+        @media screen and (max-width: 768px){
+            padding-top: 48px;
+            padding-bottom: 64px;
+            justify-content: space-between;
+        }
+        @media screen and (max-width: 425px){
+            padding-bottom: 48px;
+            padding-top: 24px;
+            row-gap: 24px;
+        }
         &-block {
             width: 291px;
             text-align: center;
             font-size: 32px;
+            @media screen and (max-width: 768px){
+                font-size: 24px;
+                width: 161px;
+            }
+            @media screen and (max-width: 768px){
+                width: 172px;
+            }
             &__num-el{
                 font-weight: 400;
                 font-size: 104px;
                 padding-bottom: 32px;
+                @media screen and (max-width: 768px){
+                    font-size: 72px;
+                }
             }
         }
     }  
