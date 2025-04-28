@@ -493,7 +493,7 @@ a {
     letter-spacing: 4.4px;
   }
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 440px) {
   .block-even {
     display: flex;
     flex-direction: column;
@@ -519,7 +519,7 @@ a {
     left: 0;
   }
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 440px) {
   .block-even .line {
     position: static;
     width: 172px;
@@ -568,7 +568,7 @@ a {
     width: 578px;
   }
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 440px) {
   .block2 .line {
     width: 172px;
   }
@@ -629,22 +629,76 @@ a {
   text-shadow: 0px 4px 4px hsla(0, 0%, 0%, 0.25);
   display: flex;
 }
+@media screen and (max-width: 778px) {
+  .form {
+    padding-bottom: 64px;
+  }
+}
+@media screen and (max-width: 440px) {
+  .form {
+    padding-bottom: 48px;
+  }
+  .form .line {
+    width: 172px;
+  }
+  .form .block-even {
+    row-gap: 48px;
+  }
+}
 .form .line_w-c {
   height: 1px;
   background-color: #FFFFFF;
   width: 848px;
   align-self: center;
 }
+@media screen and (max-width: 768px) {
+  .form .line_w-c {
+    position: absolute;
+    left: 0;
+    align-self: center;
+    width: 472px;
+  }
+}
+@media screen and (max-width: 426px) {
+  .form .line_w-c {
+    width: 172px;
+    position: static;
+  }
+}
 .form-block {
   padding-top: 68px;
   display: flex;
   column-gap: 12px;
+}
+@media screen and (max-width: 778px) {
+  .form-block {
+    padding-top: 48px;
+    column-gap: 20px;
+  }
+}
+@media screen and (max-width: 440px) {
+  .form-block {
+    padding-top: 0;
+    flex-direction: column;
+    row-gap: 12px;
+  }
 }
 .form .form__el {
   display: flex;
   flex-direction: column;
   width: 50%;
   padding-bottom: 32px;
+}
+@media screen and (max-width: 778px) {
+  .form .form__el {
+    width: 100%;
+    padding-bottom: 24px;
+  }
+}
+@media screen and (max-width: 430px) {
+  .form .form__el {
+    padding-bottom: 12px;
+  }
 }
 .form .form__el .form__label-el {
   padding: 16px 0 0 16px;
@@ -661,6 +715,16 @@ a {
   width: auto;
   column-gap: 16px;
 }
+@media screen and (max-width: 770px) {
+  .form .form_positioning {
+    padding-bottom: 48px;
+  }
+}
+@media screen and (max-width: 440px) {
+  .form .form_positioning {
+    font-size: 18px;
+  }
+}
 .form .submit {
   width: 594px;
   height: 48px;
@@ -670,6 +734,11 @@ a {
   border: none;
   display: block;
   margin: 0 auto;
+}
+@media screen and (max-width: 778px) {
+  .form .submit {
+    width: 100%;
+  }
 }
 
 .line-reviews {

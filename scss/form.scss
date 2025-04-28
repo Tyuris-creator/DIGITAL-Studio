@@ -7,19 +7,57 @@
     font-size: 20px;
     text-shadow: 0px 4px 4px hsla(0, 0%, 0%, 0.25);
     display: flex;
+    @media screen and (max-width: 778px){
+        padding-bottom: 64px;
+    }
+    @media screen and (max-width: 440px){
+        .line {
+            width: 172px;
+        }
+        .block-even {
+            row-gap: 48px;
+        }
+        padding-bottom: 48px;
+    }
     .line_w-c {
-        @include mixin.line(#FFFFFF, 848px)
+        @include mixin.line(#FFFFFF, 848px);
+        @media screen and (max-width: 768px){
+            position: absolute;
+            left: 0;
+            align-self: center;
+            width: 472px;
+        }
+        @media screen and (max-width: 426px){
+            width: 172px;
+            position: static;
+        }
     }
     &-block {
         padding-top: 68px;
         display: flex;
         column-gap: 12px;
+        @media screen and (max-width: 778px){
+            padding-top: 48px;
+            column-gap: 20px;
+        }
+        @media screen and (max-width: 440px){
+            padding-top: 0;
+            flex-direction: column;
+            row-gap: 12px;
+        }
     }
     .form__el {
         display: flex;
         flex-direction: column;
         width: 50%;
         padding-bottom: 32px;
+        @media screen and (max-width: 778px){
+            width: 100%;
+            padding-bottom: 24px;
+        }
+        @media screen and (max-width: 430px){
+            padding-bottom: 12px;
+        }
         .form__label-el {
             padding: 16px 0 0 16px;
         }
@@ -30,11 +68,18 @@
             height: 41px;
             color: #FFFFFF;
         }
+        
     }
     .form_positioning {
         flex-direction: row;
         width: auto;
         column-gap: 16px;
+        @media screen and (max-width: 770px){
+            padding-bottom: 48px;
+        }
+        @media screen and (max-width: 440px){
+            font-size: 18px;
+        }
     }
     .submit {
         width: 594px;
@@ -45,6 +90,9 @@
         border: none;
         display: block;
         margin: 0 auto;
+        @media screen and (max-width: 778px){
+            width: 100%;
+        }
     }
 }
 
