@@ -54,6 +54,7 @@ a {
     background-image: url('../assets/images/background2Desktop.png');
     background-repeat: no-repeat;
     background-size: cover;
+    z-index: 1;
     @media screen and (max-width: 768px){
         background-image: url('../assets/images/background2Tablet.png');
     }

@@ -1,0 +1,9 @@
+.spacecraft-positioning{
+    position: relative;
+    &__el {
+        position: absolute;
+        top: 384px;
+        right: 0;
+        z-index: -1;
+    }
+}
