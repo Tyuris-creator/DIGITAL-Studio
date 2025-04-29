@@ -99,6 +99,22 @@ a {
   }
 }
 
+.block3 {
+  background-image: url("../assets/images/backgroundFooterDesktop.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media screen and (max-width: 768px) {
+  .block3 {
+    background-image: url("../assets/images/backgroundFooterTablet.png");
+  }
+}
+@media screen and (max-width: 425px) {
+  .block3 {
+    background-image: url("../assets/images/backgroundFooterMobile.png");
+  }
+}
+
 .header {
   background-color: hsla(236, 5%, 8%, 0.5);
   height: 64px;
@@ -885,6 +901,24 @@ a {
 @media screen and (max-width: 426px) {
   .example .wrapper {
     row-gap: 24px;
+  }
+}
+
+.block3 {
+  position: relative;
+}
+.block3__map {
+  margin-top: 36px;
+  width: 100%;
+}
+.block3__astronaut {
+  position: absolute;
+  width: 100%;
+  top: 496px;
+}
+@media screen and (max-width: 780px) {
+  .block3__astronaut {
+    top: 390px;
   }
 }
 

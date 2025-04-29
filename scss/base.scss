@@ -63,4 +63,16 @@ a {
     }
 }
 
+.block3 {
+    background-image: url('../assets/images/backgroundFooterDesktop.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media screen and (max-width: 768px){
+        background-image: url('../assets/images/backgroundFooterTablet.png');
+    }
+    @media screen and (max-width: 425px) {
+        background-image: url('../assets/images/backgroundFooterMobile.png');
+    }
+}
+
 
