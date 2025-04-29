@@ -927,8 +927,7 @@ a {
 .footer .container_flex {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  align-self: center;
+  align-self: flex-start;
 }
 .footer .nav {
   display: flex;

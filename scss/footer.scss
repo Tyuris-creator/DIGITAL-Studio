@@ -14,8 +14,9 @@
     }
     
     .container_flex {
-        @include mixin.flex;
-        align-self: center;
+        display: flex;
+        justify-content: space-between;
+        align-self: flex-start;
     }
     .nav {
         display: flex;
