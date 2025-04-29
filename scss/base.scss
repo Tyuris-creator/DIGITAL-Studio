@@ -67,6 +67,7 @@ a {
     background-image: url('../assets/images/backgroundFooterDesktop.png');
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
     @media screen and (max-width: 768px){
         background-image: url('../assets/images/backgroundFooterTablet.png');
     }
@@ -74,5 +75,17 @@ a {
         background-image: url('../assets/images/backgroundFooterMobile.png');
     }
 }
+
+// .footer {
+//     background-image: url('../assets/images/AstronautFooterDesktop.png');
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     @media screen and (max-width: 768px){
+//         background-image: url('../assets/images/AstronautFooterTablet.png');
+//     }
+//     @media screen and (max-width: 425px) {
+//         background-image: url('../assets/images/AstronautFooterMobile.png');
+//     }
+// }
 
 

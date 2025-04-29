@@ -1,15 +1,7 @@
 .block3 {
-    position: relative;
     &__map {
         margin-top: 36px;
         width: 100%;
-    }
-    &__astronaut {
-        position: absolute;
-        width: 100%;
-        top: 496px;
-        @media screen and (max-width: 780px){
-            top: 390px;
-        }
+        padding-bottom: 349px;
     }
 }
