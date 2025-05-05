@@ -23,6 +23,7 @@
         }
         .astronaut {
             margin-right: -30px;
+            max-width: 100%;
             @media screen and (max-width: 426px) {
                 margin-left: -15px;
             }
