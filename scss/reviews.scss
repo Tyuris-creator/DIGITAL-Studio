@@ -22,6 +22,7 @@
     column-gap: 12px;
     row-gap: 12px;
     @media screen and (max-width:1024px){
+        margin-top: 48px;
         gap: 20px;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 331px 331px 193px 457px;
@@ -31,8 +32,9 @@
                              "column-five column-five"
     }
     @media screen and (max-width:425px) {
+        margin-top: 24px;
         grid-template-columns: 1fr;
-        grid-template-rows: 100%;
+        grid-template-rows: 562px;
         grid-template-areas: "column-one";
     }
     .column-one {
