@@ -1,0 +1,22 @@
+@use 'mixin' as mixin;
+
+.block3 {
+    .line__footer {
+        @include mixin.line(white, 868px);
+        @media screen and (max-width: 768px) {
+            max-width: 456px;
+        }
+        @media screen and (max-width: 426px) {
+            max-width: 172px;
+        }
+    }
+    &__map {
+        margin-top: 36px;
+        width: 100%;
+        padding-bottom: 349px;
+        @media screen and (max-width: 768px) {
+            margin-top: 48px;
+            padding-bottom: 192px;
+        }
+    }
+}

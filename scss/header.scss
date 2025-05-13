@@ -1,0 +1,38 @@
+@use 'mixin' as mixin;
+
+.header {
+    background-color: hsla(236, 5%, 8%, 0.5);
+    height: 64px;
+    display: flex;
+    font-size: 3rem;
+    @media screen and (max-width: 768px){
+        background-color: transparent;
+        height: 80px;
+    }
+    .container_flex {
+        @include mixin.flex;
+        align-self: center;
+        .nav {   
+            display: flex;
+            column-gap: 12px;
+            height: 23px;
+            &__el {
+                align-self: center;
+                transition: 0.4s;
+            }
+            &__el:hover {
+                font-weight: 600;
+                font-size: 5rem;
+                
+            }
+            @media screen and (max-width: 1024px){
+                display: none;
+            }          
+        }
+        .tel {
+            @media screen and (max-width: 768px){
+                display: none;
+            }
+        }
+    }
+}

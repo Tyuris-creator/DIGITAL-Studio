@@ -1,0 +1,65 @@
+@use 'mixin' as mixin;
+
+.block-even_reverse {
+    flex-direction: row-reverse;
+}
+.block-even {
+    display: flex;
+    padding-top: 137px;
+    font-size: 28px;
+    letter-spacing: 5.6px;
+    font-weight: 300;
+    justify-content: space-between;
+    @media screen and (max-width: 768px){
+        padding-top: 86px;
+        font-size: 22px;
+        letter-spacing: 4.4px;
+    }
+    @media screen and (max-width: 440px){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        row-gap: 16px;
+    }
+    &__text{
+        color: #000000;
+    }
+    .line {
+        @include mixin.line(#000000, 657px);
+        align-self: center;
+        @media screen and (max-width: 768px){
+            position: absolute;
+            width: 323px;
+            left: 0;
+        }
+        @media screen and (max-width: 440px){
+            position: static;
+            width: 172px;
+        }
+    }
+}
+
+.logos {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 68px;
+    padding-bottom: 128px;
+    flex-wrap: wrap;
+    @media screen and (max-width: 1140px){
+        .CDEK, .bitrix {
+            display: none;
+        }
+    }
+    @media screen and (max-width: 768px){
+        padding-bottom: 81px;
+        padding-top: 48px;
+    }
+    @media screen and (max-width: 425px){
+        .CDEK, .bitrix {
+            display: block;
+        }
+        padding-top: 24px;
+    }
+    
+}

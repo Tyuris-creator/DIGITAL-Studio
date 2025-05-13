@@ -1,0 +1,99 @@
+@use 'mixin' as mixin;
+
+.about {
+    background-color: hsla(0, 10%, 65%, 0.25);
+    backdrop-filter: blur(20px);
+    font-size: 20px;
+    padding: 111px 0 32px 0;
+    @media screen and (max-width: 768px){
+        padding: 86px 0 64px 0;
+    }
+    &__header {
+        display: flex;
+        align-items: center;
+        gap: 44px;
+        @media screen and (max-width: 768px){
+            column-gap: 24px;
+        }
+        @media screen and (max-width: 425px){
+            flex-direction: column-reverse;
+            row-gap: 32px;
+            .logo {
+                display: none
+            }
+        }
+        &-line {
+            @include mixin.line(#ffffff, 223px);
+            @media screen and (max-width: 768px){
+                width: 150px;
+            }
+        }
+        &-title{
+            font-size: 48px;
+            letter-spacing: 9.6px;
+            font-weight: 300;
+            margin-left: -4px;
+            @media screen and (max-width: 768px){
+                font-size: 32px;
+                letter-spacing: 6.4px;
+                margin: 0;
+            }
+        }
+    }
+    &__inner {
+        max-width: 594px;
+        margin-left: auto;
+        display: flex;
+        flex-direction: column;
+        row-gap: 32px; 
+        .about__inner-item:first-of-type {
+            font-size: 30px;
+            @media screen and (max-width: 768px){
+                font-size: 24px;
+            }
+        }
+        @media screen and (max-width: 768px){
+            row-gap: 24px;
+            font-size: 18px;
+            width: 519px;
+        }
+        @media screen and (max-width: 425px) {
+            padding-top: 24px;
+            flex-direction: column;
+            text-align: center;
+            width: 352px;
+            row-gap: 12px;
+        }
+    }
+    &__year {
+        text-align: end;
+        padding-top: 68px;
+        font-weight: 600;
+        @media screen and (max-width: 768px){
+            padding-top: 24px;
+            text-align: start;
+            padding-left: 185px;
+        }
+        @media screen and (max-width: 425px) {
+            display: none;
+        }
+    }
+}
+
+
+
+
+.image-wrapper {
+    position: relative;
+    .spacecraft {
+        position: absolute;
+        top: 190px;
+        left: 45px;
+        filter: blur(5px);
+        @media screen and (max-width: 768px){
+            top: 139px;
+            left: 0;
+            z-index: -1;
+        }
+    }
+}
