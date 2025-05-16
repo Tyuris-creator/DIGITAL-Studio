@@ -997,12 +997,12 @@ a {
 .block3__map {
   margin-top: 36px;
   width: 100%;
-  padding-bottom: 349px;
+  margin-bottom: 349px;
 }
 @media screen and (max-width: 768px) {
   .block3__map {
     margin-top: 48px;
-    padding-bottom: 192px;
+    margin-bottom: 192px;
   }
 }
 
