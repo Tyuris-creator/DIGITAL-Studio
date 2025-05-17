@@ -14,9 +14,20 @@
         margin-top: 36px;
         width: 100%;
         margin-bottom: 349px;
+        max-width: 1200px; 
+        height: 659px;
         @media screen and (max-width: 768px) {
             margin-top: 48px;
             margin-bottom: 192px;
+            max-width: 704px; 
+            height: 386px;
+        }
+         @media screen and (max-width: 715px) {
+            max-width: 650px; 
+        }
+         @media screen and (max-width: 425px) {
+            max-width: 352px;
+            max-height: 386px;
         }
     }
 }
