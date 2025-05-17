@@ -1000,6 +1000,7 @@ a {
   margin-bottom: 349px;
   max-width: 1200px;
   height: 659px;
+  z-index: -10;
 }
 @media screen and (max-width: 768px) {
   .block3__map {
