@@ -24,14 +24,27 @@
                     <a class="nav__el">Как нас найти</a>
                 </nav>
                 <a class="tel" href="tel:+79173183828" >+7 917 318 38 28</a>
-                <img class="burger" src="./assets/icons/menu.svg" alt="Меню"> 
+                <div class="menu menu_hide">
+                    <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+                    <label for="burger-checkbox" class="burger"></label>
+                    <ul class="menu-list">
+                        <li><a href="#about" class="menu-item">О студии</a><li>
+                        <li><a href="#adv" class="menu-item">Наши преимущества</a><li>
+                        <li><a href="integrations" class="menu-item">Интеграция с сврвисами</a><li>
+                        <li><a href="team" class="menu-item">Команда</a><li>
+                        <li><a href="form" class="menu-item">Обратная связь</a><li>
+                        <li><a href="portfolio" class="menu-item">Портфолио</a><li>
+                        <li><a href="reviews" class="menu-item">Отзывы</a><li>
+                        <li><a href="map" class="menu-item">Как нас найти</a><li>
+                    </ul>
+                </div>
             </div>   
         </header>
 
         <main class="main">
 
             <section class="container">
-                <div class="preview">
+                <div class="preview" id="about">
                     <div class="decor-line"></div>
                     <picture class="astronaut">
                         <source srcset="./assets/images/astronautMobile.png" media="(max-width: 585px)">
@@ -47,7 +60,7 @@
                 <p class="date">2024 &copy;</p>
             </section>
 
-            <section class="about">
+            <section class="about" id="we">
                 <div class="container image-wrapper">
                     <div class="about__header">
                         <picture class="logo">
@@ -72,7 +85,7 @@
 
         </main>
 
-        <section class="container">
+        <section class="container" id="adv">
             <div class="block-odd">
                 <h3 class="block-odd__text">НАШИ ПРЕИМУЩЕСТВА</h3>
                 <p class="line"></p>
@@ -98,7 +111,7 @@
         </section>
 
     </div>
-    <section class="container">
+    <section class="container" id="integration">
         <div class="block-even block-even_reverse">
             <p class="block-even__text">ИНТЕГРАЦИЯ С СЕРВИСАМИ</p>
             <p class="line"></p>
@@ -135,7 +148,7 @@
         </div>
     </section>
 
-    <div class="block2 spacecraft-positioning">
+    <div class="block2 spacecraft-positioning" id="team">
         <section class="container">
             <div class="block-odd">
                 <h3 class="block-one__advantages">КОМАНДА</h3>
@@ -166,7 +179,7 @@
             <img srcset="./assets/images/spacecraftbigDesktop.png" alt="Космический корабль">
         </picture>
 
-        <form action="" class="form">
+        <form action="" class="form" id="form">
             <div class="container">
                 <div class="block-even block-even_reverse">
                     <p class="block-even__text1">ОБРАТНАЯ СВЯЗЬ</p>
@@ -191,7 +204,7 @@
            
         </form>
 
-        <section class="container">
+        <section class="container" id="reviews">
             <div class="block-odd">
                 <h3 class="block-one__advantages">ОТЗЫВЫ</h3>
                 <p class="line-reviews"></p>
@@ -224,7 +237,7 @@
         </section>
     </div>
 
-    <section class="container">
+    <section class="container" id="portfolio">
         <div class="block-even block-even_reverse">
             <p class="block-even__text">ПОРТФОЛИО</p>
             <div class="line-portfolio"></div>
@@ -247,7 +260,7 @@
         </div>
     </section>
 
-    <section class="block3">
+    <section class="block3" id="map">
         <div class="container">
             <div class="block-odd">
                 <h3 class="block-odd__text">КАК НАС НАЙТИ</h3>
@@ -262,7 +275,7 @@
         </div>
     </section>  
 </body>
-<footer class="footer">
+<footer class="footer" id="policy">
     <picture class="">
         <source srcset="./assets/images/AstronautFooterMobile.png" media="(max-width: 425px)">
         <source srcset="./assets/images/AstronautFooterTablet.png" media="(max-width: 768px)">
